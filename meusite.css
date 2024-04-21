@@ -127,12 +127,7 @@ ul li ul:focus{
   color: white;}
 
 
-  .titulo-menu{
-    font-size: 60px;
-    text-align: center;
-  }
-
-  .menu-principal{
+    .menu-principal{
     border: 1px solid black;
     background:#bbbbbb;
     color: white;
@@ -160,12 +155,20 @@ ul li ul:focus{
     color:white;
   }
 
+
+  .titulo-menu{border: 1px solid blue;
+    background: blue;
+  color: rgb(250, 153, 9);
+  margin: 0px 5px ;
+  font-size: 48px;
+  text-align: center;
+  }
   
 
 
 
   @media(max-width:670px){
-  .titulo-menu{font-size: 16px;}
+  .titulo-menu{font-size:28px;}
   
   body {
     margin: 0;
@@ -193,7 +196,7 @@ ul li ul:focus{
   
   li {
     
-    font-size: 18pX;
+   
     margin: 1px;
     padding: 0.5em;
     border-radius: 5%;
@@ -203,14 +206,9 @@ ul li ul:focus{
   ul li:focus-within>ul{
     display: none;}
   
-    .foto-link {
-      font-size: 12px;
-      border-radius: 10%;}
-    .tit-menu{font-size: 16px;}  
-  
-    table.menu-principal{
-      font-size:13px;
-    }
+
+    .menu-principal{font-size: 16px;}
+    
     }
 
 

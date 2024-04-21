@@ -290,10 +290,10 @@ pre {
 
 .menus {
     position: fixed;
-    width: 900px;
+    width: 100%;
 background:blue;
-left:-150px;
-margin-top: 50px;
+left:-0px;
+margin-top: -135px;
 
 }
 
@@ -391,59 +391,232 @@ color: white;}
 
 
          .row{
-            margin: 80px auto;
+            margin: 70px auto;
 
          }
          b{
             color:blue;
             font-size: 24px;
          }
+   
+         
+/*  style juntado de outro css    */
+
+
+
+         body {
+            background-image: url(biblia.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
          
          
          
-    
+          }
+         
+          #biblia {
+            margin-top: 70px;
+            color: blue;
+            align-content: 50px;
+            text-transform: uppercase;
+          }
+         
+         
+          td {
+            list-style-type: none;
+            border: 3px solid rgb(242, 238, 234);
+            padding: 0px;
+            width: 50%;
+            font-size: 25px;
+            margin-bottom: 50px;
+            background: white;
+          }
+         
+         
+          a:link {
+            text-decoration: none;
+            border-width: 2px;
+            color: rgb(236, 4, 4);
+          }
+         
+          a:hover {
+            text-decoration: none;
+            border: solid;
+            border-width: 2px;
+          }         
+         
+          table.menu {
+            margin: -50px 350px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 0px solid rgb(43, 4, 238);
+            border-spacing: 0px;
+            
+           
+           
+          }
+         
+          td {
+            
+            text-align: center;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+         
+          }
+         
+          
+         
+          table {
+            display: table;
+            border-collapse: separate;
+            box-sizing: border-box;
+            text-indent: initial;
+            border-spacing: 2px;
+            border-color: gray;
+          }
+         
+          .titulo01 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            text-align: center;
+            color: blue;
+            margin-top: 50px;
+          }
+         
+         
+          
+         /*botao proxima pagina*/
+         
+          .css-kw02uy {
+           display: -webkit-inline-box;
+           display: -webkit-inline-flex;
+           display: -ms-inline-flexbox;
+           display: inline-flex;
+           -webkit-text-decoration: none;
+           text-decoration: none;
+           color: var(--bol-palette-link-solidColor);}
+         
+           svg[Attributes] {
+             width: 1.5em;
+             height: 1.5em;
+             stroke-width: 1.5;
+             fill: none;
+             color: currentcolor;
+           }
+           
+           svg:not(:root) {
+               overflow-clip-margin: content-box;
+               overflow: hidden;
+               overflow-x: ;
+               overflow-y: ;}
+         
+  @media screen and (max-width:670px) {
+         
+                 table.menu {
+                   display: flex;
+                   text-align: center;
+                   justify-content: center;
+                   align-items: center;
+                 }
+
+              
+                 td {
+                   list-style-type: none;
+                   border: 3px solid rgb(242, 238, 234);
+                   padding: 1px;
+                   width: 70px;
+                   font-size: 12px;
+                   margin-bottom: 50px;
+                   background: white;
+                   text-align: center;
+                   display: table-cell;
+                   vertical-align: inherit;
+                 }
+                 body{
+                  background-size: 100% 110%;
+                 }
+         
+                   .titulo01{font-size: 20px;
+                     margin-top: 70px;}
+
+                     table.menu {
+                        margin: -50px 150px;           
+               }
 
             
-@media (max-width:680px) {
-button{
-    padding:1px;
-    font-size:12px;
-    border: 1px solid black;
-    border-radius: 10%;
-    width: 70px;
-    height: 40px;
-    margin-left: 1px;
+
+               button{
+                padding:1px;
+                font-size:12px;
+                border: 1px solid black;
+                border-radius: 10%;
+                width: 70px;
+                height: 40px;
+                margin-left: 1px;
+                
+                
+            }
+            .titulo{
+              display: none;}
+            
+            
+                pre {
+                    margin-top: 110px;
+                    font-size: 12px;
+            }
+            
+            .menus {
+             top:50px;
+            padding:0px;    
+            font-size: 12px;
+            margin: auto;
+            margin-top: -50px;
+            
+            }
+            
+            #controls {
+            
+            background:blue;
+            width: 100%;
+            height: 50px; 
+            margin: 0px auto;
+                    }
+                    ul.ordem-3 {
+                        padding: 0px;
+                        margin-left:-110px;       
+             }
+            
+             b{font-size: 12px;}
+            }
+
+            
+         
+               
+
+
+
+         
+         
     
-    
-}
-.titulo{
-  display: none;}
 
 
-    pre {
-        margin-top: 110px;
-        font-size: 12px;
-}
 
-.menus {
- top:50px;
-padding:0px;    
-font-size: 12px;
-margin: auto;
 
-}
 
-#controls {
 
-background:blue;
-width: 100%;
-height: 50px; 
-margin: 0px auto;
-        }
-        ul.ordem-3 {
-            padding: 0px;
-            margin-left:-110px;       
- }
 
- b{font-size: 12px;}
-}
+
+
+
+
+
+
+
+            
+
