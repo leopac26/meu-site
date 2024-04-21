@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  background-image: url("shekinah05.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.botao {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 167px;
+  border-radius: 10px;
+  background: #fff;
+
+}
+
+.search-box {
+  left: 200px;
+  position: absolute;
+  background: #fff;
+  padding: 0px;
+  margin: -30px 0px 0px -100px;
+}
+
+.search-text {
+  background: none;
+  border: 2;
+  outline: 0;
+  font-size: 16px;
+
+}
+
+.foto-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 0px;
+  position: absolute;
+  
+  
+  
+}
+
+ul.menu {
+  list-style: none;
+  padding-right: 0;
+  display: flex;
+  margin: 0px auto;
+  color: #fff;
+  background: rgb(50, 7, 245);
+  position: fixed;
+  margin-left: 650px;
+  
+}
+
+li {
+  display: block;
+  font-size: 18pt;
+  margin: 5px;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  border-radius: 20%;
+
+}
+
+.menu2 {
+  text-decoration: none;
+  border: 3px solid #8daf8d41;
+  padding: 10px;
+  background: #cecece;
+  color: #fff;}
+
+.foto-link {
+  text-decoration: none;
+  color: blue;
+  border-radius: 20%;
+  border: 1px solid rgb(195, 166, 166);
+  background: rgb(177, 158, 158);
+  font-size: 24px;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  transition: all 0.5s ease;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(57, 136, 68, 0.315);
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+ul li:hover,
+ul li:focus-within {
+  background-color: rgb(224, 176, 176);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+  color: coral;
+}
+
+
+ul li ul:hover,
+ul li ul:focus{
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.img-teclado{
+  width: 150px;
+  height: 100px;
+}
+
+.tec-virt{border: 1px solid rgb(78, 79, 93);
+  background:green;
+  width: 150px;
+  box-shadow: 5px 5px 10px greenyellow;
+  border-radius: 4%;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 18px;
+  color: white;}
+
+@media(max-width:670px){
+  .foto-logo {
+    width: 37px;
+    height: 37px;
+}
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("shekinah05.jpg");
+  background-size: 800px;
+}
+ul.menu {
+  margin: 0px ;
+  color: #fff;
+  background: rgb(33, 143, 207);
+  margin-left: 170px;
+}
+.menu2 {
+  padding: 1px;
+  height: 30px;
+  margin:auto;
+  border-radius: 10%;
+}
+
+ul li ul {
+  min-width: 1rem;
+}
+
+li {
+  
+  font-size: 12pX;
+  margin: 1px;
+  padding: 0.5em;
+  border-radius: 5%;
+}
+
+ul li:hover>ul,
+ul li:focus-within>ul{
+  display: none;}
+
+  .foto-link {
+    font-size: 12px;
+    border-radius: 10%;}
+  .tit-menu{font-size: 16px;}  
+
+  table.menu-principal{
+    font-size:12px;
+  }
+  }
+  .titulo-menu{
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .menu-principal{
+    border: 1px solid black;
+    background:#bbbbbb;
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+  }
+  .menu-tabela{
+    margin:20px;
+    background: rgb(14, 169, 196);
+  }
+
+  td{
+    margin: 0px;
+    padding: 10px 0px;
+    width: 300px;
+    text-align: center;
+
+  }
+  
+  .menu-tabela a {
+    color:green;
+  }
+
+
+
+
+
+
+
+
+
