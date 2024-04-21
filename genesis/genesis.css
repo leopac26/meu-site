@@ -1,0 +1,157 @@
+ body {
+   background-image: url(biblia.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+
+
+
+ }
+
+ h1#biblia {
+   margin-top: 70px;
+   color: blue;
+   align-content: 50px;
+   text-transform: uppercase;
+ }
+
+
+ td {
+   list-style-type: none;
+   border: 3px solid rgb(242, 238, 234);
+   padding: 0px;
+   width: 50%;
+   font-size: 25px;
+   margin-bottom: 50px;
+   background: white;
+ }
+
+
+ a:link {
+   text-decoration: none;
+   border-width: 2px;
+   color: rgb(236, 4, 4);
+ }
+
+ a:hover {
+   text-decoration: none;
+   border: solid;
+   border-width: 2px;
+ }
+
+
+ footer {
+   padding-left: 400px;
+   padding-top: 0px;
+   font-size: 20px;
+   color: rgb(70, 4, 251);
+ }
+
+
+
+
+
+
+
+ table.menu {
+   margin-top: 110px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   border: 0px solid rgb(43, 4, 238);
+   border-spacing: 0px;
+  
+  
+ }
+
+ td {
+   text-align: center;
+   font-size: 16px;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ footer {
+   display: block;
+   font-size: 13px;
+   padding: 0px;
+ }
+
+ table {
+   display: table;
+   border-collapse: separate;
+   box-sizing: border-box;
+   text-indent: initial;
+   border-spacing: 2px;
+   border-color: gray;
+ }
+
+ h1 {
+   display: block;
+   font-size: 2em;
+   margin-block-start: 0.67em;
+   margin-block-end: 0.67em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;
+   text-align: center;
+   color: blue;
+ }
+
+
+ @media screen and (max-width:670px) {
+
+   table.menu {
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     
+     
+     
+
+   }
+
+   td {
+     list-style-type: none;
+     border: 3px solid rgb(242, 238, 234);
+     padding: 1px;
+     width: 70px;
+     font-size: 12px;
+     margin-bottom: 50px;
+     background: white;
+     text-align: center;
+     display: table-cell;
+     vertical-align: inherit;
+   }
+   body{
+    background-size: 100% 210%;
+   }
+
+ }
+/*botao proxima pagina*/
+
+ .css-kw02uy {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: var(--bol-palette-link-solidColor);}
+
+  svg[Attributes Style] {
+    width: 1.5em;
+    height: 1.5em;
+    stroke-width: 1.5;
+    fill: none;
+    color: currentcolor;
+  }
+  
+  svg:not(:root) {
+      overflow-clip-margin: content-box;
+      overflow: hidden;
+      overflow-x: ;
+      overflow-y: ;}
+
+    
