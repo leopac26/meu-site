@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  height: 100vh;
-  width: 100vw;
   background-color: #fff;
-  background-image: url("shekinah05.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url("CSS-Background-Responsivo/img/backgroundImg.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .botao {
@@ -136,57 +136,7 @@ ul li ul:focus{
   font-size: 18px;
   color: white;}
 
-@media(max-width:670px){
-  .foto-logo {
-    width: 37px;
-    height: 37px;
-}
-body {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-image: url("shekinah05.jpg");
-  background-size: 800px;
-}
-ul.menu {
-  margin: 0px ;
-  color: #fff;
-  background: rgb(33, 143, 207);
-  margin-left: 170px;
-}
-.menu2 {
-  padding: 1px;
-  height: 30px;
-  margin:auto;
-  border-radius: 10%;
-}
 
-ul li ul {
-  min-width: 1rem;
-}
-
-li {
-  
-  font-size: 12pX;
-  margin: 1px;
-  padding: 0.5em;
-  border-radius: 5%;
-}
-
-ul li:hover>ul,
-ul li:focus-within>ul{
-  display: none;}
-
-  .foto-link {
-    font-size: 12px;
-    border-radius: 10%;}
-  .tit-menu{font-size: 16px;}  
-
-  table.menu-principal{
-    font-size:12px;
-  }
-  }
   .titulo-menu{
     font-size: 60px;
     text-align: center;
@@ -200,7 +150,7 @@ ul li:focus-within>ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     
   }
   .menu-tabela{
@@ -220,6 +170,63 @@ ul li:focus-within>ul{
     color:green;
   }
 
+  
+
+
+
+  @media(max-width:670px){
+    .foto-logo {
+      width: 37px;
+      height: 37px;
+  }
+  
+  .titulo-menu{font-size: 16px;}
+  
+  body {
+    margin: 0;
+    
+    background-repeat: no-repeat;
+    background-image: url("shekinah05cel.jpg");
+    
+  }
+  ul.menu {
+    margin: 0px ;
+    color: #fff;
+    background: rgb(33, 143, 207);
+    margin-left: 170px;
+  }
+  .menu2 {
+    padding: 1px;
+    height: 30px;
+    margin:auto;
+    border-radius: 10%;
+  }
+  
+  ul li ul {
+    min-width: 1rem;
+  }
+  
+  li {
+    
+    font-size: 12pX;
+    margin: 1px;
+    padding: 0.5em;
+    border-radius: 5%;
+  }
+  
+  ul li:hover>ul,
+  ul li:focus-within>ul{
+    display: none;}
+  
+    .foto-link {
+      font-size: 12px;
+      border-radius: 10%;}
+    .tit-menu{font-size: 16px;}  
+  
+    table.menu-principal{
+      font-size:12px;
+    }
+    }
 
 
 

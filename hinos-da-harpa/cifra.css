@@ -7,6 +7,12 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    background-color: #fff;
+    background-image: url("../CSS-Background-Responsivo/img/backgroundImg.svg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+
     }
 
 li {
@@ -415,12 +421,8 @@ button{
     width: 70px;
     height: 40px;
     margin-left: 1px;
-    
-    
+       
 }
-.titulo{
-  display: none;}
-
 
     pre {
         margin-top: 110px;
