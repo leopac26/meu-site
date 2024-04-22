@@ -144,3 +144,46 @@
   .hide-text {
     font-size: 0;
   }
+
+  @media(max-width:670px){
+    .white-key {
+      width: 30px;
+      height: 140px;
+      font-size: 20px;
+    padding-bottom: 0px;
+  }
+
+  .black-key {
+    top: 0;
+    width: 20px;
+    height: 70px;
+}
+.keyboard-container {
+  padding: 60px 15px 8px;
+}
+
+.toggle-button {
+ 
+  width: 12px;
+  height: 12px;
+
+}
+
+.menu-principal{
+  font-size:12px;
+  margin: 40px auto;
+  width: 100%;
+
+}
+ul.ordem-principal{
+  padding: 0px;
+  margin-left: -400px;
+}
+#principal {
+  font-size:16px;
+}
+.titulo{
+  font-size: 16px;
+}
+
+}
