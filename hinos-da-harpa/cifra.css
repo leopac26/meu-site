@@ -405,8 +405,52 @@ color: white;}
         max-width: 100%;}
          
          
-         
-    
+     /*videos do youtube no site */
+     .snippet-ytb-lazy{width: 500px;
+        aspect-ratio: 16/9;
+        background-color: mediumturquoise;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0px;
+        left: 0px;
+        position: fixed;
+        margin: 75px 0px 0px 1100px;
+        
+        opacity: 0.8;
+        }
+        
+        .snippet-ytb-lazy .player{display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;}
+        
+        .snippet-ytb-lazy {
+          position: fixed;
+          width: 500px;
+          height: 280px;
+        top: 100px;
+        left: 0px;}
+        
+        .snippet-ytb-lazy svg {
+          width: 0px;
+          line-height: 0;
+          z-index: 1;
+          padding: 2px;
+          background-color:#fff;
+          border-radius: 50%;
+          display: none;
+        }
+        
+        .hino{
+            font-size: 60px;
+        }
+
+        .snippet-ytb-lazy .player, .snippet-ytb-lazy iframe{position: relative;
+        width: 500px;
+        height:280px;
+        background-color: inherit;
+        }
+
 
             
 @media (max-width:680px) {
