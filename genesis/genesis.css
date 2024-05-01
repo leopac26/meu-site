@@ -21,7 +21,6 @@
     width: 100%;
     top: 36px;
     background-color: rgb(32, 30, 187);
-    margin:2px;
  
  }
 
@@ -86,7 +85,8 @@ tbody  td a{
 
  #menu-principal a{
 font-size:12pt;
-text-decoration:none;}
+text-decoration:none;
+margin:1px;}
  
     .ordem-3 li{
         font-size: 12pt;
