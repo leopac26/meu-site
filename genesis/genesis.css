@@ -20,7 +20,8 @@
     position: fixed;
     width: 100%;
     top: 36px;
-    background-color: rgb(32, 30, 187); 
+    background-color: rgb(32, 30, 187);
+ 
  }
 
  #menu-principal a{
@@ -78,6 +79,7 @@ tbody  td a{
     }
     #menu-principal{
         top: 26px;
+font-size:12pt;
     }
     .ordem-3 li{
         font-size: 12pt;
