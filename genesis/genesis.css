@@ -84,7 +84,8 @@ tbody  td a{
     }
 
  #menu-principal a{
-font-size:12pt}
+font-size:12pt;
+text-decoration:none;}
  
     .ordem-3 li{
         font-size: 12pt;
