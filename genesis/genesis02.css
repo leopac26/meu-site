@@ -421,14 +421,21 @@ color: white;}
           }
          
          
-          td {
-            list-style-type: none;
-            border: 3px solid rgb(242, 238, 234);
+          table tr > td {
+            
+            border: 3px solid rgb(8, 7, 6);
             padding: 0px;
             width: 50%;
-            font-size: 25px;
-            margin-bottom: 50px;
+            font-size: 16px;
             background: white;
+            height: 30px;
+          }
+          table tr > th{
+            background-color: rgb(199, 179, 179);
+            font: bold;
+            font-size: 20px;
+            border: 1px solid rgb(242, 238, 234);
+            
           }
          
          
@@ -574,7 +581,7 @@ color: white;}
             .menus {
              top:50px;
             padding:0px;    
-            font-size: 12px;
+            
             margin: auto;
             margin-top: -50px;
             
@@ -594,6 +601,7 @@ color: white;}
             
              b{font-size: 12px;}
             }
+
 
             
          
