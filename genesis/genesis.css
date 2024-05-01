@@ -47,7 +47,7 @@
     text-align: center;
     margin: 110px auto;
     border: 1px solid rgb(0, 0, 0);
-    width: 400px;
+    width: 500px;
     height: 500px;
     
  }
@@ -99,7 +99,7 @@ text-decoration:none;}
         font-size: 12pt;
     }
     table.menu{
-        width: 450px;
+        width: 400px;
     }
     }
 
