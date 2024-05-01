@@ -79,8 +79,13 @@ tbody  td a{
     }
     #menu-principal{
         top: 26px;
-font-size:12pt;
+        
+        
     }
+
+ #menu-principal a{
+font-size:12pt}
+ 
     .ordem-3 li{
         font-size: 12pt;
         margin: 2px  5px 0px 5px;
