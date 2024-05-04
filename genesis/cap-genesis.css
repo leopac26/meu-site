@@ -1,5 +1,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
  }
  
  
@@ -19,6 +21,7 @@
 
  #menu-principal{
     text-align: center;
+    justify-content: center;
     position: fixed;
     width: 100%;
     top: 36px;
@@ -93,17 +96,23 @@ tbody  td a{
 }
 @media(max-width:680px){
     .titulo01{font-size: 16pt;
+      top: -6px;
+      
     }
     #menu-principal{
-        top: 26px;
+        top: 28px;
        width:100%;
+       
         
     }
 
  #menu-principal a{
 font-size:12pt;
 text-decoration:none;
-margin:1px;}
+margin:auto}
+.ordem-3{
+   
+}
  
     .ordem-3 li{
         font-size: 12pt;
