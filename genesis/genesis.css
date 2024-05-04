@@ -12,12 +12,13 @@
     position: fixed;
     width: 100%;
     top: 0px;    
-    padding: 2px;
+    padding: 5px;
     
  }
 
  #menu-principal{
     text-align: center;
+    justify-content: center
     position: fixed;
     width: 100%;
     top: 36px;
@@ -104,6 +105,9 @@ margin:1px;}
     }
 
     .ordem-3 li ul li a,.ordem-3 li ul li{
+text-align: center;
+justify-content: center;
+   
       
     }
     tbody tr td{
