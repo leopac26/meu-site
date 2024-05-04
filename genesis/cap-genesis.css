@@ -14,9 +14,7 @@
     position: fixed;
     width: 100%;
     top: 0px;    
-    padding: 5px;
-    top: 0px;
-    
+    padding: 5px;    
  }
 
  #menu-principal{
@@ -103,16 +101,14 @@ tbody  td a{
         top: 28px;
        width:100%;
        
+       
         
     }
 
  #menu-principal a{
 font-size:12pt;
 text-decoration:none;
-margin:auto}
-.ordem-3{
-   
-}
+margin:0px}
  
     .ordem-3 li{
         font-size: 12pt;
