@@ -227,6 +227,9 @@ button{
 
 .snippet-ytb-lazy .player img{
     display: none;
+}
+.snippet-ytb-lazy .player, .snippet-ytb-lazy iframe{
+    display: none;
 }}
 
 

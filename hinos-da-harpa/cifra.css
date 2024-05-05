@@ -211,9 +211,26 @@ button{
 
 #resultado{
    margin: 100px 0px ;
+   width: 100%;
 }
 #resultado  pre{
     font-size: 13px;
+}
+
+.snippet-ytb-lazy{
+    display: none;
+}
+
+.snippet-ytb-lazy .player{
+    display: none;
+
+}
+
+.snippet-ytb-lazy .player img{
+    display: none;
+}
+.snippet-ytb-lazy .player, .snippet-ytb-lazy iframe{
+    display: none;
 }
 }
 
