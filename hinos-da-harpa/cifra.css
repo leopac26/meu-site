@@ -175,8 +175,9 @@ background-color: inherit;
 
 
 #resultado{
-width: 750px;
+
 margin: 100px 70px;
+
 }
 
 
@@ -186,8 +187,15 @@ margin: 100px 70px;
             }
 
 
-#resultado  pre {
-font-size: 20px;
+ #resultado pre{
+    font-size: 20px;
+ }
+
+
+
+#resultado pre b{
+    color: blue;
+    font-size: 20px;
 }
 
 @media(max-width:680px){
