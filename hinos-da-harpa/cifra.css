@@ -184,18 +184,27 @@ margin: 100px 70px;
 #resultado .hino{
     font-size: 40px;
     
+    
             }
 
 
  #resultado pre{
     font-size: 20px;
+
+    /*text para ver se mudava mas nao mudou nada
+    unicode-bidi: isolate;
+    white-space: pre;
+    display: block;*/
+    
+
+   
  }
 
 
 
 #resultado pre b{
     color: blue;
-    font-size: 20px;
+    font-size: 20px;    
 }
 
 @media(max-width:680px){
