@@ -16,6 +16,8 @@ function rolar(e){
       clearInterval(tempo);
    }
 }
+var pre = document.querySelector("pre")
+document.write("Primeira linha\nSegunda linha");
 
    
 
