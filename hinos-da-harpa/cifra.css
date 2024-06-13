@@ -170,15 +170,23 @@ background-color: inherit;
     
     
     
-
+.container{
+    overflow: scroll;
+    border: 2px solid black;
+}
 
 
 
 #resultado{
 
 margin: 100px 70px;
-
+overflow: scroll;
+    border: 2px solid black;
 }
+
+
+
+
 
 
 #resultado .hino{
@@ -255,6 +263,21 @@ button{
     display: none;
 }
 }
+#scroll-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid #000;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#scroll-text {
+    position: absolute;
+    white-space: nowrap;
+    white-space: normal;}
+
+    #speed-control{width: 60px;}
 
 
 
