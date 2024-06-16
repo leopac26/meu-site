@@ -1,7 +1,7 @@
 
 
 
-/*var tempo;
+var tempo;
 function rolar(e){
    if(e){
       var el = document.querySelector("#resultado");
@@ -18,10 +18,10 @@ function rolar(e){
    }else{
       clearInterval(tempo);
    }
-}*/
+}
 
 
-        document.addEventListener("DOMContentLoaded", function() {
+       /*document.addEventListener("DOMContentLoaded", function() {
             const scrollContainer = document.getElementById("scroll-container");
             const scrollText = document.getElementById("scroll-text");
             const toggleButton = document.getElementById("toggle-scroll");
@@ -61,5 +61,5 @@ function rolar(e){
                     interval = setInterval(scrollTextVertically, 100 / speed);
                 }
             });
-        });
+        });*/
    
