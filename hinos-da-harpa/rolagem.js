@@ -1,5 +1,48 @@
 
 
+/*const songContainer = document.getElementById('resultado');
+const playPauseButton = document.getElementById('playPauseButton');
+const increaseSpeedButton = document.getElementById('increaseSpeed');
+const decreaseSpeedButton = document.getElementById('decreaseSpeed');
+let isPlaying = false;
+let scrollInterval;
+let scrollSpeed = 1; // pixels por passo
+let lastScrollTop = 0;
+let lastScrollTime = Date.now();
+
+playPauseButton.addEventListener('click', () => {
+    if (!isPlaying) {
+        playPauseButton.textContent = 'Pause';
+        isPlaying = true;
+        startScrolling();
+    } else {
+        playPauseButton.textContent = 'Play';
+        isPlaying = false;
+        clearInterval(scrollInterval);
+    }
+});
+
+increaseSpeedButton.addEventListener('click', () => {
+    scrollSpeed += 1;
+});
+
+decreaseSpeedButton.addEventListener('click', () => {
+    if (scrollSpeed > 1) {
+        scrollSpeed -= 1;
+    }
+});
+
+function startScrolling() {
+    scrollInterval = setInterval(() => {
+        const currentTime = Date.now();
+        const timeDiff = currentTime - lastScrollTime;
+        const distance = scrollSpeed * (timeDiff / 100); // Ajuste para uma rolagem suave
+
+        songContainer.scrollTop += distance;
+        lastScrollTop = songContainer.scrollTop;
+        lastScrollTime = currentTime;
+    }, 100); // Aproximadamente 60fps
+}*/
 
 var tempo;
 function rolar(e){
@@ -21,7 +64,7 @@ function rolar(e){
 }
 
 
-       /*document.addEventListener("DOMContentLoaded", function() {
+       document.addEventListener("DOMContentLoaded", function() {
             const scrollContainer = document.getElementById("scroll-container");
             const scrollText = document.getElementById("scroll-text");
             const toggleButton = document.getElementById("toggle-scroll");
@@ -61,5 +104,5 @@ function rolar(e){
                     interval = setInterval(scrollTextVertically, 100 / speed);
                 }
             });
-        });*/
+        });
    
