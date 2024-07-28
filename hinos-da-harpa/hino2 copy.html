@@ -5,42 +5,51 @@
   <link rel="stylesheet" href="cifra.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hino 01 Chuvas de Graça</title>
-</head>
-<body>
-  <h1 class="titulo"> Shekinah Kadosh Hinos da Harpa Cristã </h1>
-  
-  <ul class="ordem-principal">
-    <li><a href="index.html">hino</a></li>
-    <li><a href="../genesis/index.html">biblia sagrada</a></li>
-    <li><a href="../videos-youtube/videosyoutube.html">videos</a></li>
-    <li><a href="meusite.html">shekinah kadoshi</a></li>
-  </ul>
-
-  <div class="snippet-ytb-lazy" id="videoYtbLazy" data-id="dNlOcSchJ9Y&t=4s">
-    <div>
-      <div class="player">
-        <img src="botao-play.png" style="width: 150px;" alt="">
-      </div>
-    </div>
-  </div>
-
   <style>
     body {
       display: flex;
+      flex-direction: column;
       margin: 0;
       font-family: Arial, sans-serif;
       height: 100vh;
     }
+
+    .titulo {
+      text-align: center;
+    }
+
+    .ordem-principal {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f0f0f0;
+      width: 100%;
+    }
+
+    .ordem-principal li {
+      margin: 0 10px;
+    }
+
+    .ordem-principal a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      display: block;
+    }
+
+    .ordem-principal a:hover {
+      background-color: #ddd;
+    }
+
     #controls {
-      margin-top: 70px;
+      margin-top: 20px;
       display: flex;
       flex-direction: column;
       padding: 10px;
       background-color: #f0f0f0;
       border-right: 1px solid #ccc;
-      position: fixed;
-      top: 0;
-      left: 0;
     }
 
     .control-button {
@@ -54,37 +63,43 @@
     }
 
     #scroll-container {
-      margin-left: 110px; /* Ajuste para compensar a largura dos controles fixos */
+      margin-top: 20px;
       padding: 10px;
       height: auto;
-      overflow-y: auto; /* Ajuste aqui para permitir rolagem manual */
-      white-space: pre-wrap; /* Para manter o texto formatado corretamente */
-      font-size: 16px; /* Tamanho inicial da fonte */
+      width: 100%;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-size: 16px;
     }
 
     pre {
-      margin: 0;
+      margin: 100px;
     }
-    #content {
-      margin-top: 100px;
+
+    .video-container {
+      position: fixed;
+      top: 70px;
+      right: 0;
+      z-index: 1000;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
     }
 
     @media (max-width: 680px) {
-      body {
-        flex-direction: column;
-        height: auto;
-      }
-
       .titulo {
         font-size: 20px;
         text-align: center;
       }
 
       .ordem-principal {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 100%;
         padding: 2px 0;
       }
 
@@ -94,7 +109,7 @@
       }
 
       .ordem-principal ul {
-        display: none; /* Esconde submenus */
+        display: none;
       }
 
       #controls {
@@ -102,7 +117,7 @@
         flex-wrap: wrap;
         width: 100%;
         height: auto;
-        margin-top: 40px; /* Aumenta ainda mais o espaço entre o menu e os botões */
+        margin-top: 40px;
         border-right: none;
         border-bottom: none;
         position: static;
@@ -111,31 +126,49 @@
       }
 
       .control-button {
-        flex: 1 1 30%; /* Ajusta os botões para ocupar aproximadamente 30% da largura cada um */
+        flex: 1 1 30%;
         padding: 10px 5px;
         font-size: 14px;
         text-align: center;
-        margin: 5px; /* Adiciona margem entre os botões */
+        margin: 5px;
       }
 
       #scroll-container {
         margin-left: 0;
-        height: calc(100vh - 220px); /* Ajuste a altura conforme necessário */
+        height: calc(100vh - 220px);
         padding-top: 10px;
       }
 
-      .snippet-ytb-lazy {
+      .video-container {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-top: 10px;
+        position: static;
+        max-width: 100%;
       }
 
-      .snippet-ytb-lazy img {
-        width: 100px;
+      .video-container iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
       }
     }
   </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IjWO7lWs_vo?si=io3LBWe9iGMjxJ_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <h1 class="titulo">Shekinah Kadosh Hinos da Harpa Cristã</h1>
+  
+  <ul class="ordem-principal">
+    <li><a href="index.html">Hino</a></li>
+    <li><a href="../genesis/index.html">Bíblia Sagrada</a></li>
+    <li><a href="../videos-youtube/videosyoutube.html">Vídeos</a></li>
+    <li><a href="meusite.html">Shekinah Kadoshi</a></li>
+  </ul>
 
   <div id="controls">
     <div id="scroll-up" class="control-button">-</div>
@@ -199,164 +232,124 @@ Ele é tudo pra mim, e sem Ele não pos - so viver
 
 <b>A</b>       <b>E</b>          <b>A</b>                <b>F#</b>       <b>Bm</b>
 Diz a sagrada escritura, que são formosos os pés
-        <b>E</b>                       <b>A</b>    <b>E</b>
+       <b>E</b>                         <b>A</b>   <b>E</b>
 Daqueles que boas novas levam para os infiéis
-<b>A</b>        <b>E</b>        <b>A</b>   <b>A7</b>                  <b>D</b>
-E se tão belo é falar dessas grandezas, aqui
-<b>D#º</b>              <b>A</b>   <b>E7</b>                  <b>A</b>  <b>E</b>
-Que não será o gozar a graça que existe ali!
+<b>A</b>          <b>E</b>        <b>A</b>   <b>A7</b>                    <b>D</b>
+E se nós a Deus obedeceremos, com fracos não encontramos
+<b>D#º</b>               <b>A</b>   <b>E7</b>             <b>A</b>    <b>E</b>
+Pois Ele nos receberá e a si mesmo nos guiará
 
-
-    Glória a Deus
-
-    [Acordes]
-    A = X 0 2 2 2 0
-    A/C# = X 4 X 2 5 5
-    A9 = X 0 2 2 0 0
-    A4 = X 0 2 2 3 0
-    A6 = 5 X 4 6 5 X
-    B = X 2 4 4 4 2
-    B/D# = X 6 X 4 7 7
-    B4 = X 2 4 4 5 2
-    Bm = X 2 4 4 3 2
-    C#m = X 4 6 6 5 4
-    D = X X 0 2 3 2
-    D/F# = 2 X 0 2 3 2
-    E = 0 2 2 1 0 0
-    E/G# = 4 X 2 4 5 X
-    Em = 0 2 2 0 0 0
-    G = 3 2 0 0 0 3
-    G/B = X 2 0 0 3 3
-
+<b>A</b>       <b>E</b>    <b>A</b>            <b>F#m</b>        <b>E</b>
+Sim eu porfiarei por essa terra de além
+<b>Bm</b>      <b>E</b>                              <b>A</b>
+E lá    terminarei as muitas lutas de aquém
+<b>A</b>       <b>E</b>         <b>A</b>     <b>A7</b>                <b>D</b>
+Lá está meu bom senhor, ao qual eu desejo ver
+<b>D#º</b>      <b>A</b>                  <b>Bm</b>    <b>E</b>    <b>A</b>   <b>E</b>
+Ele é tudo pra mim, e sem Ele não pos - so viver
     </pre>
   </div>
 
   <script>
-    const scrollContainer = document.getElementById('scroll-container');
-    const scrollUpButton = document.getElementById('scroll-up');
-    const scrollDownButton = document.getElementById('scroll-down');
-    const scrollToggleButton = document.getElementById('scroll-toggle');
-    const scrollResetButton = document.getElementById('scroll-reset');
-    const transposeUpButton = document.getElementById('transpose-up');
-    const transposeDownButton = document.getElementById('transpose-down');
-    const fontSizeUpButton = document.getElementById('font-size-up');
-    const fontSizeDownButton = document.getElementById('font-size-down');
-    const content = document.getElementById('content');
+    document.addEventListener('DOMContentLoaded', () => {
+      let isScrolling = false;
+      let scrollSpeed = 1;
+      let scrollInterval;
+      const scrollContainer = document.getElementById('scroll-container');
+      const scrollUpButton = document.getElementById('scroll-up');
+      const scrollDownButton = document.getElementById('scroll-down');
+      const scrollToggleButton = document.getElementById('scroll-toggle');
+      const scrollResetButton = document.getElementById('scroll-reset');
+      const transposeUpButton = document.getElementById('transpose-up');
+      const transposeDownButton = document.getElementById('transpose-down');
+      const fontSizeUpButton = document.getElementById('font-size-up');
+      const fontSizeDownButton = document.getElementById('font-size-down');
 
-    let scrollInterval;
-    let scrollSpeed = 1;
-    let scrollDirection = 1; // 1 para baixo, -1 para cima
-    let scrollingPaused = true;
-    let originalContent = content.innerHTML;
-    let currentFontSize = 16; // Tamanho inicial da fonte
+      function startScrolling() {
+        if (!isScrolling) {
+          scrollInterval = setInterval(() => {
+            scrollContainer.scrollBy(0, scrollSpeed);
+          }, 100);
+          isScrolling = true;
+          scrollToggleButton.textContent = 'Pause';
+        }
+      }
 
-    // Função para iniciar ou pausar a rolagem
-    const toggleScroll = () => {
-        if (scrollingPaused) {
-            scrollToggleButton.textContent = 'Pause';
-            startScrolling();
+      function stopScrolling() {
+        if (isScrolling) {
+          clearInterval(scrollInterval);
+          isScrolling = false;
+          scrollToggleButton.textContent = 'Play';
+        }
+      }
+
+      scrollUpButton.addEventListener('click', () => {
+        scrollSpeed = Math.max(scrollSpeed - 1, 1);
+      });
+
+      scrollDownButton.addEventListener('click', () => {
+        scrollSpeed += 1;
+      });
+
+      scrollToggleButton.addEventListener('click', () => {
+        if (isScrolling) {
+          stopScrolling();
         } else {
-            scrollToggleButton.textContent = 'Play';
-            clearInterval(scrollInterval);
+          startScrolling();
         }
-        scrollingPaused = !scrollingPaused;
-    };
+      });
 
-    // Função para iniciar a rolagem
-    const startScrolling = () => {
-        clearInterval(scrollInterval); // Limpa qualquer intervalo existente
-        scrollInterval = setInterval(() => {
-            scrollContainer.scrollTop += scrollDirection * scrollSpeed;
-            if (scrollContainer.scrollTop >= content.scrollHeight - scrollContainer.clientHeight) {
-                clearInterval(scrollInterval);
-                scrollToggleButton.textContent = 'Play'; // Atualiza o botão para 'Play' ao finalizar a rolagem
-            } else if (scrollContainer.scrollTop <= 0) {
-                clearInterval(scrollInterval);
-                scrollToggleButton.textContent = 'Play'; // Atualiza o botão para 'Play' ao finalizar a rolagem
-            }
-        }, 200); // Intervalo de 200ms para suavizar a rolagem
-    };
+      scrollResetButton.addEventListener('click', () => {
+        scrollContainer.scrollTo(0, 0);
+        stopScrolling();
+        scrollSpeed = 1;
+      });
 
-    // Evento para iniciar ou pausar a rolagem ao clicar no botão de toggle
-    scrollToggleButton.addEventListener('click', toggleScroll);
+      transposeUpButton.addEventListener('click', () => {
+        transposeChords(1);
+      });
 
-    // Evento para aumentar a velocidade de rolagem (botão +)
-    scrollDownButton.addEventListener('click', () => {
-        scrollSpeed++;
-        if (!scrollingPaused) {
-            clearInterval(scrollInterval); // Limpa o intervalo atual
-            startScrolling();
-        }
-    });
+      transposeDownButton.addEventListener('click', () => {
+        transposeChords(-1);
+      });
 
-    // Evento para diminuir a velocidade de rolagem (botão -)
-    scrollUpButton.addEventListener('click', () => {
-        if (scrollSpeed > 1) {
-            scrollSpeed--;
-            if (!scrollingPaused) {
-                clearInterval(scrollInterval); // Limpa o intervalo atual
-                startScrolling();
-            }
-        }
-    });
+      fontSizeUpButton.addEventListener('click', () => {
+        adjustFontSize(1);
+      });
 
-    // Evento para resetar o conteúdo original sem parar a rolagem
-    scrollResetButton.addEventListener('click', () => {
-        content.innerHTML = originalContent;
-        scrollContainer.scrollTop = 0; // Retorna ao topo do conteúdo
-    });
-    
-    // Função para aumentar o tamanho da fonte
-    const increaseFontSize = () => {
-        currentFontSize += 2;
-        content.style.fontSize = currentFontSize + 'px';
-    };
+      fontSizeDownButton.addEventListener('click', () => {
+        adjustFontSize(-1);
+      });
 
-    // Evento para aumentar o tamanho da fonte
-    fontSizeUpButton.addEventListener('click', increaseFontSize);
-
-    // Função para diminuir o tamanho da fonte
-    const decreaseFontSize = () => {
-        if (currentFontSize > 8) {
-            currentFontSize -= 2;
-            content.style.fontSize = currentFontSize + 'px';
-        }
-    };
-
-    // Evento para diminuir o tamanho da fonte
-    fontSizeDownButton.addEventListener('click', decreaseFontSize);
-
-    // Função para transpor acordes
-    const transposeChords = (semitones) => {
-        const chords = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-        const regexChords = /(?:[ABCDEFG][#b]?(?:m|maj|min|sus|aug|dim)?(?:\d{0,2})?)/g;
-        const originalText = content.innerHTML;
-        const transposedText = originalText.replace(regexChords, (match) => {
-            const baseChord = match.charAt(0).toUpperCase() + match.slice(1).replace(/[^#b]/g, ''); // Captura a base do acorde
-            const index = (chords.indexOf(baseChord) + semitones) % chords.length;
-            const newIndex = index >= 0 ? index : index + chords.length;
-            const newChord = chords[newIndex];
-            return newChord + match.slice(baseChord.length);
+      function transposeChords(semitones) {
+        const chordElements = content.querySelectorAll('b');
+        chordElements.forEach(chordElement => {
+          chordElement.textContent = transposeChord(chordElement.textContent, semitones);
         });
-        content.innerHTML = transposedText;
-    };
+      }
 
-    // Evento para transpor acordes para cima
-    transposeUpButton.addEventListener('click', () => {
-        transposeChords(1); // Transpõe um semitom para cima
-    });
+      function transposeChord(chord, semitones) {
+        const notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
+        const chordParts = chord.split('/');
+        const transposedChord = chordParts.map(part => {
+          const noteMatch = part.match(/[A-G][#b]?/);
+          if (!noteMatch) return part;
+          const note = noteMatch[0];
+          const noteIndex = notes.indexOf(note);
+          if (noteIndex === -1) return part;
+          const newIndex = (noteIndex + semitones + notes.length) % notes.length;
+          return part.replace(note, notes[newIndex]);
+        });
+        return transposedChord.join('/');
+      }
 
-    // Evento para transpor acordes para baixo
-    transposeDownButton.addEventListener('click', () => {
-        transposeChords(-1); // Transpõe um semitom para baixo
-    });
+      function adjustFontSize(change) {
+        const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
+        content.style.fontSize = `${currentSize + change}px`;
+      }
 
-    // Permite a rolagem manual do conteúdo com o mouse sem pausar a rolagem automática
-    scrollContainer.addEventListener('wheel', (event) => {
-        scrollContainer.scrollTop += event.deltaY;
-        if (!scrollingPaused) {
-            toggleScroll(); // Pausa a rolagem automática quando o usuário rolar manualmente
-        }
+      scrollToggleButton.addEventListener('click', startScrolling);
+      scrollResetButton.addEventListener('click', stopScrolling);
     });
   </script>
 </body>
