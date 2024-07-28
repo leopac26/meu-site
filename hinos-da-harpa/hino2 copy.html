@@ -44,7 +44,7 @@
     }
 
     #controls {
-      margin-top: 20px;
+      margin-top: 70px;
       display: flex;
       flex-direction: column;
       padding: 10px;
@@ -63,23 +63,24 @@
     }
 
     #scroll-container {
-      margin-top: 20px;
+      margin: 10px 0px 0px 100px;
       padding: 10px;
       height: auto;
-      width: 100%;
+      width: 91%;
       overflow-y: auto;
       white-space: pre-wrap;
       font-size: 16px;
     }
 
     pre {
-      margin: 100px;
+      margin: 10px;
+      
     }
 
     .video-container {
       position: fixed;
       top: 70px;
-      right: 0;
+      right: 20px;
       z-index: 1000;
       width: 100%;
       max-width: 560px;
@@ -235,9 +236,9 @@ Diz a sagrada escritura, que são formosos os pés
        <b>E</b>                         <b>A</b>   <b>E</b>
 Daqueles que boas novas levam para os infiéis
 <b>A</b>          <b>E</b>        <b>A</b>   <b>A7</b>                    <b>D</b>
-E se nós a Deus obedeceremos, com fracos não encontramos
+E se tão belo é falar, dessas grandezas, aqui,
 <b>D#º</b>               <b>A</b>   <b>E7</b>             <b>A</b>    <b>E</b>
-Pois Ele nos receberá e a si mesmo nos guiará
+Que não será o gozar, a graça que existe ali
 
 <b>A</b>       <b>E</b>    <b>A</b>            <b>F#m</b>        <b>E</b>
 Sim eu porfiarei por essa terra de além
@@ -269,7 +270,7 @@ Ele é tudo pra mim, e sem Ele não pos - so viver
         if (!isScrolling) {
           scrollInterval = setInterval(() => {
             scrollContainer.scrollBy(0, scrollSpeed);
-          }, 100);
+          }, 200);
           isScrolling = true;
           scrollToggleButton.textContent = 'Pause';
         }
