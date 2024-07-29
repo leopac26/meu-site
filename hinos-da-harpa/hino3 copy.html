@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="cifra.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hino 01 Chuvas de Graça</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
+
+    .titulo {
+      text-align: center;
+    }
+
+    .ordem-principal {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f0f0f0;
+      width: 100%;
+    }
+
+    .ordem-principal li {
+      margin: 0 10px;
+    }
+
+    .ordem-principal a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      display: block;
+    }
+
+    .ordem-principal a:hover {
+      background-color: #ddd;
+    }
+
+    #controls {
+      margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-right: 1px solid #ccc;
+    }
+
+    .control-button {
+      margin-bottom: 5px;
+      padding: 10px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background-color: #ccc;
+      color: #333;
+      text-align: center;
+    }
+
+    #scroll-container {
+      margin: 10px 0px 0px 100px;
+      padding: 10px;
+      height: auto;
+      width: 91%;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-size: 16px;
+    }
+
+    pre {
+      margin: 10px;
+      
+    }
+
+    .video-container {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      z-index: 1000;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 680px) {
+      .titulo {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .ordem-principal {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2px 0;
+      }
+
+      .ordem-principal li {
+        width: auto;
+        text-align: center;
+      }
+
+      .ordem-principal ul {
+        display: none;
+      }
+
+      #controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        border-right: none;
+        border-bottom: none;
+        position: static;
+        justify-content: space-around;
+        padding: 10px 0;
+      }
+
+      .control-button {
+        flex: 1 1 30%;
+        padding: 10px 5px;
+        font-size: 14px;
+        text-align: center;
+        margin: 5px;
+      }
+
+      #scroll-container {
+        margin-left: 0;
+        height: calc(100vh - 220px);
+        padding-top: 10px;
+      }
+
+      .video-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        position: static;
+        max-width: 100%;
+      }
+
+      .video-container iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OQTjmqdG1Bg?si=LEFxD9z6i37X-6fm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <h1 class="titulo">Shekinah Kadosh Hinos da Harpa Cristã</h1>
+  
+  <ul class="ordem-principal">
+    <li><a href="index.html">Hino</a></li>
+    <li><a href="../genesis/index.html">Bíblia Sagrada</a></li>
+    <li><a href="../videos-youtube/videosyoutube.html">Vídeos</a></li>
+    <li><a href="meusite.html">Shekinah Kadoshi</a></li>
+  </ul>
+
+  <div id="controls">
+    <div id="scroll-up" class="control-button">-</div>
+    <div id="scroll-down" class="control-button">+</div>
+    <div id="scroll-toggle" class="control-button">Play</div>
+    <div id="scroll-reset" class="control-button">Reset</div>
+    <div id="transpose-up" class="control-button">Transpose +</div>
+    <div id="transpose-down" class="control-button">Transpose -</div>
+    <div id="font-size-up" class="control-button">A+</div>
+    <div id="font-size-down" class="control-button">A-</div>
+  </div>
+
+  <div id="scroll-container">
+    <pre id="content">
+        Hino 03
+        Plena paz
+ 
+            Tom:<b>D</b>
+ 
+            <b>D</b>
+     Plena paz e Santo gozo
+               <b>G</b>          <b>D</b>
+     Tenho em ti ó meu Jesus!
+               <b>D</b>                        <b>A</b>
+     Pois eu cri em tua morte sobre a cruz
+            <b>D</b>
+     No senhor só confiando
+            <b>G</b>         <b>D</b>
+     Nesse mundo viverei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>    <b>D</b>
+     Entoando aleluias ao meu Rei!
+ 
+     [Refrão]
+ 
+          <b>G</b>
+     Oh Glória ao meu Jesus!
+             <b>D</b>
+     Pois é digno de louvor
+            <b>G</b>               <b>D</b>             <b>A</b>
+     É meu Rei, meu bom pastor e meu senhor
+             <b>D</b>
+     Como os anjos, que o louvam
+         <b>G</b>             <b>D</b>
+     Eu também o louvarei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>     <b>D</b>
+     Entoando aleluias ao meu Rei
+ 
+         <b>D</b>
+     O amor de Jesus Cristo
+             <b>G</b>          <b>D</b>
+     É mui grande para mim
+                <b>D</b>                          <b>A</b>
+     Pois sua graça me encheu de amor sem fim
+            <b>D</b>
+     Meu Jesus foi para Glória
+             <b>G</b>           <b>D</b>
+     Mas um dia eu O verei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>    <b>D</b>
+     Entoando aleluias ao meu Rei!
+ 
+     [Refrão]
+ 
+          <b>G</b>
+     Oh Glória ao meu Jesus!
+             <b>D</b>
+     Pois é digno de louvor
+         <b>G</b>                <b>D</b>            <b>A</b>
+     É meu Rei, meu bom pastor e meu senhor
+             <b>D</b>
+     Como os anjos, que o louvam
+         <b>G</b>             <b>D</b>
+     Eu também o louvarei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>    <b>D</b>
+     Entoando aleluias ao meu Rei
+ 
+           <b>D</b>
+     Este mundo não deseja
+             <b>G</b>         <b>D</b>
+     Tão bondoso Salvador
+            <b>D</b>
+     Não sabendo agradecer
+                  <b>A</b>
+     Seu grande amor
+            <b>D</b>
+     Eu, porém estou gozando
+           <b>G</b>          <b>D</b>
+     Do favor da sua lei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>    <b>D</b>
+     Entoando aleluias ao meu Rei!
+ 
+     [Refrão]
+ 
+          <b>G</b>
+     Oh Glória ao meu Jesus!
+             <b>D</b>
+     Pois é digno de louvor
+         <b>G</b>               <b>D</b>            <b>A</b>
+     É meu Rei, meu bom pastor e meu senhor
+             <b>D</b>
+     Como os anjos, que o louvam
+         <b>G</b>             <b>D</b>
+     Eu também o louvarei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>    <b>D</b>
+     Entoando aleluias ao meu Rei
+ 
+                 <b>D</b>
+     Quando o povo israelita
+            <b>G</b>            <b>D</b>
+     Com Jesus se concertar
+             <b>D</b>                        <b>A</b>
+     Dando Glória ao seu nome sem cessar
+              <b>D</b>
+     Nesse tempo, céu e terra
+             <b>G</b>            <b>D</b>
+     Hão de ser a mesma grei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>    <b>D</b>
+     Entoando aleluias ao meu Rei!
+ 
+     [Refrão]
+ 
+          <b>G</b>
+     Oh Glória ao meu Jesus!
+             <b>D</b>
+     Pois é digno de louvor
+            <b>G</b>               <b>D</b>             <b>A</b>
+     É meu Rei, meu bom pastor e meu senhor
+             <b>D</b>
+     Como os anjos, que o louvam
+         <b>G</b>             <b>D</b>
+     Eu também o louvarei
+         <b>Bm</b>        <b>Em</b>       <b>A</b>     <b>D</b>
+     Entoando aleluias ao meu Rei
+ 
+     [Final] <b>G</b>  <b>A</b>  <b>D</b>
+
+
+              Glória a Deus
+
+              [Acordes]
+              A = X 0 2 2 2 0
+              A/C# = X 4 X 2 5 5
+              A9 = X 0 2 2 0 0
+              A4 = X 0 2 2 3 0
+              A6 = 5 X 4 6 5 X
+              B = X 2 4 4 4 2
+              B/D# = X 6 X 4 7 7
+              B4 = X 2 4 4 5 2
+              Bm = X 2 4 4 3 2
+              C#m = X 4 6 6 5 4
+              D = X X 0 2 3 2
+              D/F# = 2 X 0 2 3 2
+              E = 0 2 2 1 0 0
+              E/G# = 4 X 2 4 5 X
+              Em = 0 2 2 0 0 0
+              G = 3 2 0 0 0 3
+              G/B = X 2 0 0 3 3
+    </pre>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let isScrolling = false;
+      let scrollSpeed = 1;
+      let scrollInterval;
+      const scrollContainer = document.getElementById('scroll-container');
+      const scrollUpButton = document.getElementById('scroll-up');
+      const scrollDownButton = document.getElementById('scroll-down');
+      const scrollToggleButton = document.getElementById('scroll-toggle');
+      const scrollResetButton = document.getElementById('scroll-reset');
+      const transposeUpButton = document.getElementById('transpose-up');
+      const transposeDownButton = document.getElementById('transpose-down');
+      const fontSizeUpButton = document.getElementById('font-size-up');
+      const fontSizeDownButton = document.getElementById('font-size-down');
+
+      function startScrolling() {
+        if (!isScrolling) {
+          scrollInterval = setInterval(() => {
+            scrollContainer.scrollBy(0, scrollSpeed);
+          }, 200);
+          isScrolling = true;
+          scrollToggleButton.textContent = 'Pause';
+        }
+      }
+
+      function stopScrolling() {
+        if (isScrolling) {
+          clearInterval(scrollInterval);
+          isScrolling = false;
+          scrollToggleButton.textContent = 'Play';
+        }
+      }
+
+      scrollUpButton.addEventListener('click', () => {
+        scrollSpeed = Math.max(scrollSpeed - 1, 1);
+      });
+
+      scrollDownButton.addEventListener('click', () => {
+        scrollSpeed += 1;
+      });
+
+      scrollToggleButton.addEventListener('click', () => {
+        if (isScrolling) {
+          stopScrolling();
+        } else {
+          startScrolling();
+        }
+      });
+
+      scrollResetButton.addEventListener('click', () => {
+        scrollContainer.scrollTo(0, 0);
+        stopScrolling();
+        scrollSpeed = 1;
+      });
+
+      transposeUpButton.addEventListener('click', () => {
+        transposeChords(1);
+      });
+
+      transposeDownButton.addEventListener('click', () => {
+        transposeChords(-1);
+      });
+
+      fontSizeUpButton.addEventListener('click', () => {
+        adjustFontSize(1);
+      });
+
+      fontSizeDownButton.addEventListener('click', () => {
+        adjustFontSize(-1);
+      });
+
+      function transposeChords(semitones) {
+        const chordElements = content.querySelectorAll('b');
+        chordElements.forEach(chordElement => {
+          chordElement.textContent = transposeChord(chordElement.textContent, semitones);
+        });
+      }
+
+      function transposeChord(chord, semitones) {
+        const notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
+        const chordParts = chord.split('/');
+        const transposedChord = chordParts.map(part => {
+          const noteMatch = part.match(/[A-G][#b]?/);
+          if (!noteMatch) return part;
+          const note = noteMatch[0];
+          const noteIndex = notes.indexOf(note);
+          if (noteIndex === -1) return part;
+          const newIndex = (noteIndex + semitones + notes.length) % notes.length;
+          return part.replace(note, notes[newIndex]);
+        });
+        return transposedChord.join('/');
+      }
+
+      function adjustFontSize(change) {
+        const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
+        content.style.fontSize = `${currentSize + change}px`;
+      }
+
+      scrollToggleButton.addEventListener('click', startScrolling);
+      scrollResetButton.addEventListener('click', stopScrolling);
+    });
+  </script>
+</body>
+</html>
