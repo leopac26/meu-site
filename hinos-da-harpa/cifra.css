@@ -17,19 +17,15 @@ padding: 5px;
 font-size: 25pt;
 border: 1px solid rgb(3, 212, 20);
 z-index: 1;
+text-align: center;
+margin-bottom: 10px;
+font-size: 24px;
 
 }
 
-p{
-
-}
-
-.menu-principal {
-}
 
 
 ul.ordem-principal{
-
     position: fixed;
     width: 100%;
     background:blue;
@@ -37,7 +33,6 @@ ul.ordem-principal{
     top: 30px;
     font-size: 16px;
     height: 30px;
-    
 list-style: none;
 justify-content: center;
 align-items: center;
@@ -49,7 +44,6 @@ z-index: 1;
 ul.ordem-principal li {
 background-color: #d5e7e9;
 display: inline-block;
-
 padding: 2px;
 text-decoration: none;
 transition-duration: 0.5s;
@@ -66,15 +60,15 @@ text-align: center;
 }
 
 ul.ordem-principal li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: fixed;
+    transition: all 0.5s ease;
+    margin: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(92, 1, 240, 0.315);
 
-visibility: hidden;
-opacity: 0;
-min-width: 5rem;
-position: fixed;
-transition: all 0.5s ease;
-margin: 0;
-display: none;
-box-shadow: 0px 8px 16px 0px rgba(92, 1, 240, 0.315);
 }
 
 
@@ -199,12 +193,6 @@ overflow: scroll;
  #resultado pre{
     font-size: 20px;
 
-    /*text para ver se mudava mas nao mudou nada
-    unicode-bidi: isolate;
-    white-space: pre;
-    display: block;*/
-    
-
    
  }
 
@@ -278,6 +266,157 @@ button{
     white-space: normal;}
 
     #speed-control{width: 60px;}
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+      }
+  
+      
+  
+      .ordem-principal {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #f0f0f0;
+        width: 100%;
+      }
+  
+      .ordem-principal li {
+        margin: 0 10px;
+      }
+  
+      .ordem-principal a {
+        text-decoration: none;
+        color: #333;
+        padding: 3px;
+        display: block;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 5px;
+      }
+  
+      .ordem-principal a:hover {
+        background-color: #0056b3;
+      }
+  
+      #controls {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-right: 1px solid #ccc;
+      }
+  
+      .control-button {
+        margin-bottom: 5px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: #ccc;
+        color: #333;
+        text-align: center;
+      }
+  
+      #scroll-container {
+        margin: 10px 0px 0px 100px;
+        padding: 10px;
+        height: auto;
+        width: 91%;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        font-size: 16px;
+      }
+  
+      pre {
+        margin: 150px 10px 10px 5px;
+      }
+  
+      .video-container {
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        z-index: 1000;
+        width: 100%;
+        max-width: 560px;
+        height: 315px;
+      }
+  
+      .video-container iframe {
+        width: 100%;
+        height: 100%;
+      }
+  
+      @media (max-width: 680px) {
+        .titulo {
+          font-size: 20px;
+          text-align: center;
+        }
+  
+        .ordem-principal {
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 2px 0;
+        }
+  
+        .ordem-principal li {
+          width: auto;
+          text-align: center;
+        }
+  
+        .ordem-principal ul {
+          display: none;
+        }
+  
+        #controls {
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          height: auto;
+          margin-top: 40px;
+          border-right: none;
+          border-bottom: none;
+          position: static;
+          justify-content: space-around;
+          padding: 10px 0;
+        }
+  
+        .control-button {
+          flex: 1 1 30%;
+          padding: 10px 5px;
+          font-size: 14px;
+          text-align: center;
+          margin: 5px;
+        }
+  
+        #scroll-container {
+          margin-left: 0;
+          height: calc(100vh - 220px);
+          padding-top: 10px;
+        }
+  
+        .video-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          position: static;
+          max-width: 100%;
+        }
+  
+        .video-container iframe {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+        }
+      }
 
 
 
