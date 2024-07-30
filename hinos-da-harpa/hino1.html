@@ -5,42 +5,56 @@
   <link rel="stylesheet" href="cifra.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hino 01 Chuvas de Graça</title>
-</head>
-<body>
-  <h1 class="titulo"> Shekinah Kadosh Hinos da Harpa Cristã </h1>
-  
-  <ul class="ordem-principal">
-    <li><a href="index.html">hino</a></li>
-    <li><a href="../genesis/index.html">biblia sagrada</a></li>
-    <li><a href="../videos-youtube/videosyoutube.html">videos</a></li>
-    <li><a href="meusite.html">shekinah kadoshi</a></li>
-  </ul>
-
-  <div class="snippet-ytb-lazy" id="videoYtbLazy" data-id="dNlOcSchJ9Y&t=4s">
-    <div>
-      <div class="player">
-        <img src="botao-play.png" style="width: 150px;" alt="">
-      </div>
-    </div>
-  </div>
-
   <style>
     body {
       display: flex;
+      flex-direction: column;
       margin: 0;
       font-family: Arial, sans-serif;
       height: 100vh;
     }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .ordem-principal {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #f0f0f0;
+      width: 100%;
+    }
+
+    .ordem-principal li {
+      margin: 0 10px;
+    }
+
+    .ordem-principal a {
+      text-decoration: none;
+      color: #333;
+      padding: 3px;
+      display: block;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .ordem-principal a:hover {
+      background-color: #0056b3;
+    }
+
     #controls {
-      margin-top: 70px;
+      margin-top: 80px;
       display: flex;
       flex-direction: column;
       padding: 10px;
       background-color: #f0f0f0;
       border-right: 1px solid #ccc;
-      position: fixed;
-      top: 0;
-      left: 0;
     }
 
     .control-button {
@@ -54,37 +68,43 @@
     }
 
     #scroll-container {
-      margin-left: 110px; /* Ajuste para compensar a largura dos controles fixos */
+      margin: 10px 0px 0px 100px;
       padding: 10px;
       height: auto;
-      overflow-y: auto; /* Ajuste aqui para permitir rolagem manual */
-      white-space: pre-wrap; /* Para manter o texto formatado corretamente */
-      font-size: 16px; /* Tamanho inicial da fonte */
+      width: 91%;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-size: 16px;
     }
 
     pre {
-      margin: 0;
+      margin: 10px;
     }
-    #content {
-      margin-top: 100px;
+
+    .video-container {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      z-index: 1000;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
     }
 
     @media (max-width: 680px) {
-      body {
-        flex-direction: column;
-        height: auto;
-      }
-
       .titulo {
         font-size: 20px;
         text-align: center;
       }
 
       .ordem-principal {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 100%;
         padding: 2px 0;
       }
 
@@ -94,7 +114,7 @@
       }
 
       .ordem-principal ul {
-        display: none; /* Esconde submenus */
+        display: none;
       }
 
       #controls {
@@ -102,7 +122,7 @@
         flex-wrap: wrap;
         width: 100%;
         height: auto;
-        margin-top: 40px; /* Aumenta ainda mais o espaço entre o menu e os botões */
+        margin-top: 40px;
         border-right: none;
         border-bottom: none;
         position: static;
@@ -111,31 +131,49 @@
       }
 
       .control-button {
-        flex: 1 1 30%; /* Ajusta os botões para ocupar aproximadamente 30% da largura cada um */
+        flex: 1 1 30%;
         padding: 10px 5px;
         font-size: 14px;
         text-align: center;
-        margin: 5px; /* Adiciona margem entre os botões */
+        margin: 5px;
       }
 
       #scroll-container {
         margin-left: 0;
-        height: calc(100vh - 220px); /* Ajuste a altura conforme necessário */
+        height: calc(100vh - 220px);
         padding-top: 10px;
       }
 
-      .snippet-ytb-lazy {
+      .video-container {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-top: 10px;
+        position: static;
+        max-width: 100%;
       }
 
-      .snippet-ytb-lazy img {
-        width: 100px;
+      .video-container iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
       }
     }
   </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IjWO7lWs_vo?si=io3LBWe9iGMjxJ_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <h1 class="titulo">Shekinah Kadosh Hinos da Harpa Cristã</h1>
+  
+  <ul class="ordem-principal">
+    <li><a href="index.html">Hino</a></li>
+    <li><a href="../genesis/index.html">Bíblia Sagrada</a></li>
+    <li><a href="../videos-youtube/videosyoutube.html">Vídeos</a></li>
+    <li><a href="meusite.html">Shekinah Kadoshi</a></li>
+  </ul>
 
   <div id="controls">
     <div id="scroll-up" class="control-button">-</div>
@@ -150,210 +188,181 @@
 
   <div id="scroll-container">
     <pre id="content">
-001 - Chuvas de Graça
-Harpa Cristã
-Cifra: Principal (violão e guitarra)
-    [Intro] <b>Bb</b>  <b>Eb</b>  <b>Bb</b>  <b>Gm</b>  <b>F</b>
-<b>Bb</b>        <b>F</b>           <b>Bb</b>
-Deus prometeu com certeza
-<b>F</b>                 <b>Bb</b>  <b>Bb7</b>
-Chuvas de graça mandar
-<b>Eb</b>               <b>Bb/D</b> <b>Cm</b>
-Ele nos dá fortale___za
-<b>F4</b>       <b>F</b>           <b>Cm</b>   <b>F</b>
-E ricas bênçãos sem par
-
-<b>Bb</b>
-Chuvas de graça
-    <b>Gm</b>             <b>F</b>
-Chuvas pedimos, Senhor
-<b>Bb</b>          <b>Eb</b>        <b>Bb</b>
-Manda-nos chuvas constantes
-<b>F</b>               <b>Bb</b>
-Chuvas do Consolador
-
-<b>Bb</b>          <b>F</b>        <b>Bb</b>
-Cristo nos tem concedido
-<b>F</b>              <b>Bb</b>  <b>Bb7</b>
-O santo Consolador
-<b>Eb</b>                   <b>Bb/D</b>
-De plena paz nos enchido
-<b>Cm</b>                <b>F/A</b>
-Para o reinado do amor
-
-<b>Bb</b>
-Chuvas de graça
-    <b>Gm</b>             <b>F</b>
-Chuvas pedimos, Senhor
-<b>Bb</b>          <b>Eb</b>        <b>Bb</b>
-Manda-nos chuvas constantes
-<b>F</b>               <b>Bb</b>
-Chuvas do Consolador
-
-<b>Bb</b>          <b>F</b>         <b>Bb</b>
-Dá-nos, Senhor, amplamente
-<b>F</b>                   <b>Bb</b>  <b>Bb7</b>
-Teu grande gozo e poder
-<b>Eb</b>                 <b>Bb/D</b>  <b>Cm</b>
-Fonte de amor permanen___te
-<b>F4</b>          <b>F</b>        <b>Cm</b>   <b>F</b>
-Põe dentro de nosso ser
-
-<b>Bb</b>
-Chuvas de graça
-    <b>Gm</b>             <b>F</b>
-Chuvas pedimos, Senhor
-<b>Bb</b>          <b>Eb</b>        <b>Bb</b>
-Manda-nos chuvas constantes
-<b>F</b>               <b>Bb</b>
-Chuvas do Consolador
-
-<b>Bb</b>           <b>F</b>         <b>Bb</b>
-Faze os teus servos piedosos
-<b>F</b>                   <b>Bb</b>  <b>Bb7</b>
-Dá-lhes virtude e valor
-<b>Eb</b>                     <b>Bb</b>
-Dando os teus dons preciosos
-<b>Gm</b>             <b>F/A</b>
-Do santo Preceptor
-
-<b>Bb</b>
-Chuvas de graça
-    <b>Gm</b>             <b>F</b>
-Chuvas pedimos, Senhor
-<b>Bb</b>          <b>Eb</b>        <b>Bb</b>
-Manda-nos chuvas constantes
-<b>F</b>               <b>Bb</b>
-Chuvas do Consolador
+      001 - Chuvas de Graça
+      Harpa Cristã
+      Cifra: Principal (violão e guitarra)
+          [Intro] <b>Bb</b>  <b>Eb</b>  <b>Bb</b>  <b>Gm</b>  <b>F</b>
+      <b>Bb</b>        <b>F</b>           <b>Bb</b>
+      Deus prometeu com certeza
+      <b>F</b>                 <b>Bb</b>  <b>Bb7</b>
+      Chuvas de graça mandar
+      <b>Eb</b>               <b>Bb/D</b> <b>Cm</b>
+      Ele nos dá fortale___za
+      <b>F4</b>       <b>F</b>           <b>Cm</b>   <b>F</b>
+      E ricas bênçãos sem par
+      
+      <b>Bb</b>
+      Chuvas de graça
+          <b>Gm</b>             <b>F</b>
+      Chuvas pedimos, Senhor
+      <b>Bb</b>          <b>Eb</b>        <b>Bb</b>
+      Manda-nos chuvas constantes
+      <b>F</b>               <b>Bb</b>
+      Chuvas do Consolador
+      
+      <b>Bb</b>          <b>F</b>        <b>Bb</b>
+      Cristo nos tem concedido
+      <b>F</b>              <b>Bb</b>  <b>Bb7</b>
+      O santo Consolador
+      <b>Eb</b>                   <b>Bb/D</b>
+      De plena paz nos enchido
+      <b>Cm</b>                <b>F/A</b>
+      Para o reinado do amor
+      
+      <b>Bb</b>
+      Chuvas de graça
+          <b>Gm</b>             <b>F</b>
+      Chuvas pedimos, Senhor
+      <b>Bb</b>          <b>Eb</b>        <b>Bb</b>
+      Manda-nos chuvas constantes
+      <b>F</b>               <b>Bb</b>
+      Chuvas do Consolador
+      
+      <b>Bb</b>          <b>F</b>         <b>Bb</b>
+      Dá-nos, Senhor, amplamente
+      <b>F</b>                   <b>Bb</b>  <b>Bb7</b>
+      Teu grande gozo e poder
+      <b>Eb</b>                 <b>Bb/D</b>  <b>Cm</b>
+      Fonte de amor permanen___te
+      <b>F4</b>          <b>F</b>        <b>Cm</b>   <b>F</b>
+      Põe dentro de nosso ser
+      
+      <b>Bb</b>
+      Chuvas de graça
+          <b>Gm</b>             <b>F</b>
+      Chuvas pedimos, Senhor
+      <b>Bb</b>          <b>Eb</b>        <b>Bb</b>
+      Manda-nos chuvas constantes
+      <b>F</b>               <b>Bb</b>
+      Chuvas do Consolador
+      
+      <b>Bb</b>           <b>F</b>         <b>Bb</b>
+      Faze os teus servos piedosos
+      <b>F</b>                   <b>Bb</b>  <b>Bb7</b>
+      Dá-lhes virtude e valor
+      <b>Eb</b>                     <b>Bb</b>
+      Dando os teus dons preciosos
+      <b>Gm</b>             <b>F/A</b>
+      Do santo Preceptor
+      
+      <b>Bb</b>
+      Chuvas de graça
+          <b>Gm</b>             <b>F</b>
+      Chuvas pedimos, Senhor
+      <b>Bb</b>          <b>Eb</b>        <b>Bb</b>
+      Manda-nos chuvas constantes
+      <b>F</b>               <b>Bb</b>
+      Chuvas do Consolador
     </pre>
   </div>
 
   <script>
-    const scrollContainer = document.getElementById('scroll-container');
-    const scrollUpButton = document.getElementById('scroll-up');
-    const scrollDownButton = document.getElementById('scroll-down');
-    const scrollToggleButton = document.getElementById('scroll-toggle');
-    const scrollResetButton = document.getElementById('scroll-reset');
-    const transposeUpButton = document.getElementById('transpose-up');
-    const transposeDownButton = document.getElementById('transpose-down');
-    const fontSizeUpButton = document.getElementById('font-size-up');
-    const fontSizeDownButton = document.getElementById('font-size-down');
-    const content = document.getElementById('content');
+    document.addEventListener('DOMContentLoaded', () => {
+      let isScrolling = false;
+      let scrollSpeed = 1;
+      let scrollInterval;
+      const scrollContainer = document.getElementById('scroll-container');
+      const scrollUpButton = document.getElementById('scroll-up');
+      const scrollDownButton = document.getElementById('scroll-down');
+      const scrollToggleButton = document.getElementById('scroll-toggle');
+      const scrollResetButton = document.getElementById('scroll-reset');
+      const transposeUpButton = document.getElementById('transpose-up');
+      const transposeDownButton = document.getElementById('transpose-down');
+      const fontSizeUpButton = document.getElementById('font-size-up');
+      const fontSizeDownButton = document.getElementById('font-size-down');
 
-    let scrollInterval;
-    let scrollSpeed = 1;
-    let scrollDirection = 1; // 1 para baixo, -1 para cima
-    let scrollingPaused = true;
-    let originalContent = content.innerHTML;
-    let currentFontSize = 16; // Tamanho inicial da fonte
+      function startScrolling() {
+        if (!isScrolling) {
+          scrollInterval = setInterval(() => {
+            scrollContainer.scrollBy(0, scrollSpeed);
+          }, 200);
+          isScrolling = true;
+          scrollToggleButton.textContent = 'Pause';
+        }
+      }
 
-    // Função para iniciar ou pausar a rolagem
-    const toggleScroll = () => {
-        if (scrollingPaused) {
-            scrollToggleButton.textContent = 'Pause';
-            startScrolling();
+      function stopScrolling() {
+        if (isScrolling) {
+          clearInterval(scrollInterval);
+          isScrolling = false;
+          scrollToggleButton.textContent = 'Play';
+        }
+      }
+
+      scrollUpButton.addEventListener('click', () => {
+        scrollSpeed = Math.max(scrollSpeed - 1, 1);
+      });
+
+      scrollDownButton.addEventListener('click', () => {
+        scrollSpeed += 1;
+      });
+
+      scrollToggleButton.addEventListener('click', () => {
+        if (isScrolling) {
+          stopScrolling();
         } else {
-            scrollToggleButton.textContent = 'Play';
-            clearInterval(scrollInterval);
+          startScrolling();
         }
-        scrollingPaused = !scrollingPaused;
-    };
+      });
 
-    // Função para iniciar a rolagem
-    const startScrolling = () => {
-        clearInterval(scrollInterval); // Limpa qualquer intervalo existente
-        scrollInterval = setInterval(() => {
-            scrollContainer.scrollTop += scrollDirection * scrollSpeed;
-            if (scrollContainer.scrollTop >= content.scrollHeight - scrollContainer.clientHeight) {
-                clearInterval(scrollInterval);
-                scrollToggleButton.textContent = 'Play'; // Atualiza o botão para 'Play' ao finalizar a rolagem
-            } else if (scrollContainer.scrollTop <= 0) {
-                clearInterval(scrollInterval);
-                scrollToggleButton.textContent = 'Play'; // Atualiza o botão para 'Play' ao finalizar a rolagem
-            }
-        }, 200); // Intervalo de 200ms para suavizar a rolagem
-    };
+      scrollResetButton.addEventListener('click', () => {
+        scrollContainer.scrollTo(0, 0);
+        stopScrolling();
+        scrollSpeed = 1;
+      });
 
-    // Evento para iniciar ou pausar a rolagem ao clicar no botão de toggle
-    scrollToggleButton.addEventListener('click', toggleScroll);
+      transposeUpButton.addEventListener('click', () => {
+        transposeChords(1);
+      });
 
-    // Evento para aumentar a velocidade de rolagem (botão +)
-    scrollDownButton.addEventListener('click', () => {
-        scrollSpeed++;
-        if (!scrollingPaused) {
-            clearInterval(scrollInterval); // Limpa o intervalo atual
-            startScrolling();
-        }
-    });
+      transposeDownButton.addEventListener('click', () => {
+        transposeChords(-1);
+      });
 
-    // Evento para diminuir a velocidade de rolagem (botão -)
-    scrollUpButton.addEventListener('click', () => {
-        if (scrollSpeed > 1) {
-            scrollSpeed--;
-            if (!scrollingPaused) {
-                clearInterval(scrollInterval); // Limpa o intervalo atual
-                startScrolling();
-            }
-        }
-    });
+      fontSizeUpButton.addEventListener('click', () => {
+        adjustFontSize(1);
+      });
 
-    // Evento para resetar o conteúdo original sem parar a rolagem
-    scrollResetButton.addEventListener('click', () => {
-        content.innerHTML = originalContent;
-        scrollContainer.scrollTop = 0; // Retorna ao topo do conteúdo
-    });
-    
-    // Função para aumentar o tamanho da fonte
-    const increaseFontSize = () => {
-        currentFontSize += 2;
-        content.style.fontSize = currentFontSize + 'px';
-    };
+      fontSizeDownButton.addEventListener('click', () => {
+        adjustFontSize(-1);
+      });
 
-    // Evento para aumentar o tamanho da fonte
-    fontSizeUpButton.addEventListener('click', increaseFontSize);
-
-    // Função para diminuir o tamanho da fonte
-    const decreaseFontSize = () => {
-        if (currentFontSize > 8) {
-            currentFontSize -= 2;
-            content.style.fontSize = currentFontSize + 'px';
-        }
-    };
-
-    // Evento para diminuir o tamanho da fonte
-    fontSizeDownButton.addEventListener('click', decreaseFontSize);
-
-    // Função para transpor acordes
-    const transposeChords = (semitones) => {
-        const chords = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-        const regexChords = /(?:[ABCDEFG][#b]?(?:m|maj|min|sus|aug|dim)?(?:\d{0,2})?)/g;
-        const originalText = content.innerHTML;
-        const transposedText = originalText.replace(regexChords, (match) => {
-            const baseChord = match.charAt(0).toUpperCase() + match.slice(1).replace(/[^#b]/g, ''); // Captura a base do acorde
-            const index = (chords.indexOf(baseChord) + semitones) % chords.length;
-            const newIndex = index >= 0 ? index : index + chords.length;
-            const newChord = chords[newIndex];
-            return newChord + match.slice(baseChord.length);
+      function transposeChords(semitones) {
+        const chordElements = content.querySelectorAll('b');
+        chordElements.forEach(chordElement => {
+          chordElement.textContent = transposeChord(chordElement.textContent, semitones);
         });
-        content.innerHTML = transposedText;
-    };
+      }
 
-    // Evento para transpor acordes para cima
-    transposeUpButton.addEventListener('click', () => {
-        transposeChords(1); // Transpõe um semitom para cima
-    });
+      function transposeChord(chord, semitones) {
+        const notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
+        const chordParts = chord.split('/');
+        const transposedChord = chordParts.map(part => {
+          const noteMatch = part.match(/[A-G][#b]?/);
+          if (!noteMatch) return part;
+          const note = noteMatch[0];
+          const noteIndex = notes.indexOf(note);
+          if (noteIndex === -1) return part;
+          const newIndex = (noteIndex + semitones + notes.length) % notes.length;
+          return part.replace(note, notes[newIndex]);
+        });
+        return transposedChord.join('/');
+      }
 
-    // Evento para transpor acordes para baixo
-    transposeDownButton.addEventListener('click', () => {
-        transposeChords(-1); // Transpõe um semitom para baixo
-    });
-
-    // Permite a rolagem manual do conteúdo com o mouse sem pausar a rolagem automática
-    scrollContainer.addEventListener('wheel', (event) => {
-        scrollContainer.scrollTop += event.deltaY;
-        if (!scrollingPaused) {
-            toggleScroll(); // Pausa a rolagem automática quando o usuário rolar manualmente
-        }
+      function adjustFontSize(change) {
+        const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
+        content.style.fontSize = `${currentSize + change}px`;
+      }
     });
   </script>
 </body>
