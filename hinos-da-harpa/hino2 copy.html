@@ -16,6 +16,8 @@
 
     .titulo {
       text-align: center;
+      margin-bottom: 10px;
+      font-size: 24px;
     }
 
     .ordem-principal {
@@ -35,16 +37,19 @@
     .ordem-principal a {
       text-decoration: none;
       color: #333;
-      padding: 10px;
+      padding: 3px;
       display: block;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
     }
 
     .ordem-principal a:hover {
-      background-color: #ddd;
+      background-color: #0056b3;
     }
 
     #controls {
-      margin-top: 70px;
+      margin-top: 80px;
       display: flex;
       flex-direction: column;
       padding: 10px;
@@ -74,7 +79,6 @@
 
     pre {
       margin: 10px;
-      
     }
 
     .video-container {
@@ -348,9 +352,6 @@ Ele é tudo pra mim, e sem Ele não pos - so viver
         const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
         content.style.fontSize = `${currentSize + change}px`;
       }
-
-      scrollToggleButton.addEventListener('click', startScrolling);
-      scrollResetButton.addEventListener('click', stopScrolling);
     });
   </script>
 </body>
