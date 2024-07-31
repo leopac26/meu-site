@@ -3,215 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="cifra.css">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hino 01 Chuvas de Graça</title>
+  <style>
+    
+  </style>
 </head>
-
-<script src="cifra.js"></script>
-
-<script src="acordes.js"></script>
-<script src="musica.js"></script>
-<script src="rolagem.js"></script>
-
 <body>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jBgO8grSwsU?si=PZzwNhkunBAOrfen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <h1 class="titulo">Shekinah Kadosh Hinos da Harpa Cristã</h1>
   
-    <style>
+  <ul class="ordem-principal">
+    <li><a href="index.html">Hino</a></li>
+    <li><a href="../genesis/index.html">Bíblia Sagrada</a></li>
+    <li><a href="../videos-youtube/videosyoutube.html">Vídeos</a></li>
+    <li><a href="meusite.html">Shekinah Kadoshi</a></li>
+  </ul>
 
-        .titulo{
-          border: 1px solid black;
-          background: blue;
-          color: white;
-          position: fixed;
-          width: 100%;
-          height: 100px;
-          top: 0px;
-          
-        }
-        
-        
-        #principal{
-          margin: 120px;
-        list-style: none;
-        text-transform: capitalize;
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;}
-        
-        #principal li::first-letter {color: red;}
-        
-        #principal li a:link{color: rgb(97, 0, 252);}
-        
-        #principal li a:visited{color: rgb(185, 34, 255);}
-        
-        #principal li a:hover{color: rgb(226, 141, 43);
-        background: rgb(228, 221, 221);}
-        
-        ul.ordem-principal{list-style: none;}
-        
-        .menu-principal {
-            position: fixed;
-            width: 900px;
-        background:blue;
-        left:-150px;
-        margin-top: 50px;
-        font-size: 16px;}
-        
-        
-        ul.ordem-principal li {
-            background-color: #d5e7e9;
-            display: inline-block;
-            align-items: center;
-            align-content: center;
-            padding: 5px;
-            text-decoration: none;
-            transition-duration: 0.5s;
-            border: 1px solid black;
-            margin:5px;
-            border-radius: 10%;
-            
-        
-        
-        }
-        
-        ul.ordem-principal li a {
-            text-decoration: none;
-            color: rgb(24, 9, 9);
-            text-transform: uppercase;
-            text-align: center;
-            
-        }
-        
-        ul.ordem-principal li ul {
-            visibility: hidden;
-            opacity: 0;
-            min-width: 5rem;
-            position: fixed;
-            transition: all 0.5s ease;
-            margin: 0;
-            display: none;
-            box-shadow: 0px 8px 16px 0px rgba(92, 1, 240, 0.315);
-        }
-        
-        
-        ul.ordem-principal li ul li {
-            clear: both;
-            width: 100%;
-            padding: 0 ;
-            margin-top: 3px;
-            width: 100px;
-            display: block;
-            border: none;
-        }
-        
-        ul.ordem-principal li:hover,
-        ul.ordem-principal li:focus-within {
-            background-color: rgb(252, 252, 252);
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        
-        
-        
-        a:hover {
-            color: rgb(61, 9, 250);
-        }
-        
-        /*controla a exibiçao do dropdown*/
-        
-        ul.ordem-principal li:hover>ul,
-        ul.ordem-principal li:focus-within>ul,
-        ul.ordem-principal li ul:hover,
-        ul.ordem-principal li ul:focus {
-            visibility: visible;
-            opacity: 1;
-            display: block;
-        }
-        
-        
-        
-        @media(max-width:670px){
-         .menu-principal{
-          font-size:12px;
-          margin: 40px auto;
-          width: 830px;
-        
-        }
-        ul.ordem-principal{
-          padding: 0px;
-          margin-left: -110px;
-        }
-        #principal {
-          font-size:16px;
-        }
-        .titulo{
-          font-size: 16px;
-        }
-        
-        }
-        
-          </style>
-        
-          <body>
-        
-            <h1 class="titulo"> Shekinah Kadoshi 
-              <p>Hinos da Harpa Cristã</p>
-            </h1>
-          
-            <div class="menu-principal">
-              <ul class="ordem-principal">
-            <li><a href="index.html">hino
-                <ul>
-                
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-            <li><a href="../genesis/index.html">biblia sagrada</a>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-            <li><a href="#">videos</a>
-                <ul>
-                    <li><a href="../videos-youtube/videosyoutube.html">louvores</a></li>
-                    <li><a href="../videos-youtube/videosyoutube.html">videos</a></li>
-                </ul>
-            </li>
-            <li><a href="meusite.html">shekinah kadoshi</a>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-        
-        </ul>
-    </div>
+  <div id="controls">
+    <div id="scroll-up" class="control-button">-</div>
+    <div id="scroll-down" class="control-button">+</div>
+    <div id="scroll-toggle" class="control-button">Play</div>
+    <div id="scroll-reset" class="control-button">Reset</div>
+    <div id="transpose-up" class="control-button">Transpose +</div>
+    <div id="transpose-down" class="control-button">Transpose -</div>
+    <div id="font-size-up" class="control-button">A+</div>
+    <div id="font-size-down" class="control-button">A-</div>
+  </div>
 
-
-    <div id="controls">
-        <button class="botao" onclick="rolar(1)">rolagem</button>
-        <button class="botao" onclick="rolar()">Pause</button>
-      
-        <button onclick="transposicaoBotao(1)">+ 1/2 tom</button>
-        <button onclick="transposicaoBotao(-1)">- 1/2 tom</button>
-        <Button onclick="reset()">reset</Button>
-      
-      </div>
-
- <div class="row">
-    <div class="col musicas">
-        
-<p data-arquivo="Hino 01 - chuvas de Graça" onclick="abrirMusica(event)"></p>
-       
-        
-    </div>
-
- <div class="row">
- <div id="resultado">
-<pre>
-                Hino 44
+  <div id="scroll-container">
+    <pre id="content">
+      Hino 44
             Oh! Que Glória!
             Tom: <b>G</b>
 
@@ -294,11 +119,108 @@
             Em = 0 2 2 0 0 0
             G = 3 2 0 0 0 3
             G/B = X 2 0 0 3 3
+    </pre>
+  </div>
 
-        </pre>
-</div>
-</div>
-  
-    
-  </body>
-  </html>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let isScrolling = false;
+      let scrollSpeed = 1;
+      let scrollInterval;
+      const scrollContainer = document.getElementById('scroll-container');
+      const scrollUpButton = document.getElementById('scroll-up');
+      const scrollDownButton = document.getElementById('scroll-down');
+      const scrollToggleButton = document.getElementById('scroll-toggle');
+      const scrollResetButton = document.getElementById('scroll-reset');
+      const transposeUpButton = document.getElementById('transpose-up');
+      const transposeDownButton = document.getElementById('transpose-down');
+      const fontSizeUpButton = document.getElementById('font-size-up');
+      const fontSizeDownButton = document.getElementById('font-size-down');
+
+      function startScrolling() {
+        if (!isScrolling) {
+          scrollInterval = setInterval(() => {
+            scrollContainer.scrollBy(0, scrollSpeed);
+          }, 200);
+          isScrolling = true;
+          scrollToggleButton.textContent = 'Pause';
+        }
+      }
+
+      function stopScrolling() {
+        if (isScrolling) {
+          clearInterval(scrollInterval);
+          isScrolling = false;
+          scrollToggleButton.textContent = 'Play';
+        }
+      }
+
+      scrollUpButton.addEventListener('click', () => {
+        scrollSpeed = Math.max(scrollSpeed - 1, 1);
+      });
+
+      scrollDownButton.addEventListener('click', () => {
+        scrollSpeed += 1;
+      });
+
+      scrollToggleButton.addEventListener('click', () => {
+        if (isScrolling) {
+          stopScrolling();
+        } else {
+          startScrolling();
+        }
+      });
+
+      scrollResetButton.addEventListener('click', () => {
+        scrollContainer.scrollTo(0, 0);
+        stopScrolling();
+        scrollSpeed = 1;
+      });
+
+      transposeUpButton.addEventListener('click', () => {
+        transposeChords(1);
+      });
+
+      transposeDownButton.addEventListener('click', () => {
+        transposeChords(-1);
+      });
+
+      fontSizeUpButton.addEventListener('click', () => {
+        adjustFontSize(1);
+      });
+
+      fontSizeDownButton.addEventListener('click', () => {
+        adjustFontSize(-1);
+      });
+
+      function transposeChords(semitones) {
+        const chordElements = content.querySelectorAll('b');
+        chordElements.forEach(chordElement => {
+          chordElement.textContent = transposeChord(chordElement.textContent, semitones);
+        });
+      }
+
+      function transposeChord(chord, semitones) {
+        const notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
+        const chordParts = chord.split('/');
+        const transposedChord = chordParts.map(part => {
+          const noteMatch = part.match(/[A-G][#b]?/);
+          if (!noteMatch) return part;
+          const note = noteMatch[0];
+          const noteIndex = notes.indexOf(note);
+          if (noteIndex === -1) return part;
+          const newIndex = (noteIndex + semitones + notes.length) % notes.length;
+          return part.replace(note, notes[newIndex]);
+        });
+        return transposedChord.join('/');
+      }
+
+      function adjustFontSize(change) {
+        const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
+        content.style.fontSize = `${currentSize + change}px`;
+      }
+
+    });
+  </script>
+</body>
+</html>
