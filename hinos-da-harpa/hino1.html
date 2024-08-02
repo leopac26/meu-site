@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hino 01 Chuvas de Graça</title>
   <style>
-    
+    /* Seu CSS aqui */
   </style>
 </head>
 <body>
@@ -128,6 +128,10 @@
       const transposeDownButton = document.getElementById('transpose-down');
       const fontSizeUpButton = document.getElementById('font-size-up');
       const fontSizeDownButton = document.getElementById('font-size-down');
+      const content = document.getElementById('content');
+
+      // Armazene o estado original das cifras
+      const originalContent = content.innerHTML;
 
       function startScrolling() {
         if (!isScrolling) {
@@ -167,14 +171,16 @@
         scrollContainer.scrollTo(0, 0);
         stopScrolling();
         scrollSpeed = 1;
+        // Restaure o estado original das cifras
+        content.innerHTML = originalContent;
       });
 
       transposeUpButton.addEventListener('click', () => {
-        transposeChords(1);
+        transposeChords(1, 'sharp');
       });
 
       transposeDownButton.addEventListener('click', () => {
-        transposeChords(-1);
+        transposeChords(-1, 'flat');
       });
 
       fontSizeUpButton.addEventListener('click', () => {
@@ -185,31 +191,44 @@
         adjustFontSize(-1);
       });
 
-      function transposeChords(semitones) {
-        const chordElements = content.querySelectorAll('b');
-        chordElements.forEach(chordElement => {
-          chordElement.textContent = transposeChord(chordElement.textContent, semitones);
+      function transposeChords(semitones, preference) {
+        const chords = content.querySelectorAll('b');
+        chords.forEach(chord => {
+          chord.innerHTML = transposeChord(chord.innerHTML, semitones, preference);
         });
       }
 
-      function transposeChord(chord, semitones) {
-        const notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
-        const chordParts = chord.split('/');
-        const transposedChord = chordParts.map(part => {
-          const noteMatch = part.match(/[A-G][#b]?/);
-          if (!noteMatch) return part;
-          const note = noteMatch[0];
-          const noteIndex = notes.indexOf(note);
-          if (noteIndex === -1) return part;
-          const newIndex = (noteIndex + semitones + notes.length) % notes.length;
-          return part.replace(note, notes[newIndex]);
-        });
-        return transposedChord.join('/');
+      function transposeChord(chord, semitones, preference) {
+        const sharpKeys = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+        const flatKeys = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+        
+        const chordRegex = /^([A-G])(b|#)?(.*)$/;
+        const match = chord.match(chordRegex);
+        
+        if (!match) return chord;
+
+        let [_, root, accidental, suffix] = match;
+
+        accidental = accidental || '';
+
+        let index;
+        if (preference === 'sharp') {
+          index = (sharpKeys.indexOf(root + accidental) + semitones + 12) % 12;
+          root = sharpKeys[index];
+        } else if (preference === 'flat') {
+          index = (flatKeys.indexOf(root + accidental) + semitones + 12) % 12;
+          root = flatKeys[index];
+        } else {
+          index = (sharpKeys.indexOf(root + accidental) + semitones + 12) % 12;
+          root = sharpKeys[index];
+        }
+
+        return root + suffix;
       }
 
-      function adjustFontSize(change) {
-        const currentSize = parseFloat(window.getComputedStyle(content).fontSize);
-        content.style.fontSize = `${currentSize + change}px`;
+      function adjustFontSize(amount) {
+        const currentFontSize = parseFloat(window.getComputedStyle(content, null).getPropertyValue('font-size'));
+        content.style.fontSize = (currentFontSize + amount) + 'px';
       }
     });
   </script>
