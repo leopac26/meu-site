@@ -3,253 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="cifra.css">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hino 01 Chuvas de Graça</title>
+  <style>
+    
+  </style>
 </head>
-
-<script src="cifra.js"></script>
-
-<script src="acordes.js"></script>
-<script src="musica.js"></script>
-<script src="rolagem.js"></script>
-
 <body>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jBgO8grSwsU?si=PZzwNhkunBAOrfen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <h1 class="titulo">Shekinah Kadosh Hinos da Harpa Cristã</h1>
   
-    <style>
+  <ul class="ordem-principal">
+    <li><a href="index.html">Hino</a></li>
+    <li><a href="../genesis/index.html">Bíblia Sagrada</a></li>
+    <li><a href="../videos-youtube/videosyoutube.html">Vídeos</a></li>
+    <li><a href="meusite.html">Shekinah Kadoshi</a></li>
+  </ul>
 
-        .titulo{
-          border: 1px solid black;
-          background: blue;
-          color: white;
-          position: fixed;
-          width: 100%;
-          height: 100px;
-          top: 0px;
-          
-        }
-        
-        
-        #principal{
-          margin: 120px;
-        list-style: none;
-        text-transform: capitalize;
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;}
-        
-        #principal li::first-letter {color: red;}
-        
-        #principal li a:link{color: rgb(97, 0, 252);}
-        
-        #principal li a:visited{color: rgb(185, 34, 255);}
-        
-        #principal li a:hover{color: rgb(226, 141, 43);
-        background: rgb(228, 221, 221);}
-        
-        ul.ordem-principal{list-style: none;}
-        
-        .menu-principal {
-            position: fixed;
-            width: 900px;
-        background:blue;
-        left:-150px;
-        margin-top: 50px;
-        font-size: 16px;}
-        
-        
-        ul.ordem-principal li {
-            background-color: #d5e7e9;
-            display: inline-block;
-            align-items: center;
-            align-content: center;
-            padding: 5px;
-            text-decoration: none;
-            transition-duration: 0.5s;
-            border: 1px solid black;
-            margin:5px;
-            border-radius: 10%;
-            
-        
-        
-        }
-        
-        ul.ordem-principal li a {
-            text-decoration: none;
-            color: rgb(24, 9, 9);
-            text-transform: uppercase;
-            text-align: center;
-            
-        }
-        
-        ul.ordem-principal li ul {
-            visibility: hidden;
-            opacity: 0;
-            min-width: 5rem;
-            position: fixed;
-            transition: all 0.5s ease;
-            margin: 0;
-            display: none;
-            box-shadow: 0px 8px 16px 0px rgba(92, 1, 240, 0.315);
-        }
-        
-        
-        ul.ordem-principal li ul li {
-            clear: both;
-            width: 100%;
-            padding: 0 ;
-            margin-top: 3px;
-            width: 100px;
-            display: block;
-            border: none;
-        }
-        
-        ul.ordem-principal li:hover,
-        ul.ordem-principal li:focus-within {
-            background-color: rgb(252, 252, 252);
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        
-        
-        
-        a:hover {
-            color: rgb(61, 9, 250);
-        }
-        
-        /*controla a exibiçao do dropdown*/
-        
-        ul.ordem-principal li:hover>ul,
-        ul.ordem-principal li:focus-within>ul,
-        ul.ordem-principal li ul:hover,
-        ul.ordem-principal li ul:focus {
-            visibility: visible;
-            opacity: 1;
-            display: block;
-        }
-        
-        
-        
-        @media(max-width:670px){
-         .menu-principal{
-          font-size:12px;
-          margin: 40px auto;
-          width: 830px;
-        
-        }
-        ul.ordem-principal{
-          padding: 0px;
-          margin-left: -110px;
-        }
-        #principal {
-          font-size:16px;
-        }
-        .titulo{
-          font-size: 16px;
-        }
-        
-        }
-        
-          </style>
-        
-          <body>
-        
-            <h1 class="titulo"> Shekinah Kadoshi 
-              <p>Hinos da Harpa Cristã</p>
-            </h1>
-          
-            <div class="menu-principal">
-              <ul class="ordem-principal">
-            <li><a href="index.html">hino
-                <ul>
-                
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-            <li><a href="../genesis/index.html">biblia sagrada</a>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-            <li><a href="#">videos</a>
-                <ul>
-                    <li><a href="../videos-youtube/videosyoutube.html">louvores</a></li>
-                    <li><a href="../videos-youtube/videosyoutube.html">videos</a></li>
-                </ul>
-            </li>
-            <li><a href="meusite.html">shekinah kadoshi</a>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </li>
-        
-        </ul>
-    </div>
+  <div id="controls">
+    <div id="scroll-up" class="control-button">-</div>
+    <div id="scroll-down" class="control-button">+</div>
+    <div id="scroll-toggle" class="control-button">Play</div>
+    <div id="scroll-reset" class="control-button">Reset</div>
+    <div id="transpose-up" class="control-button">Transpose +</div>
+    <div id="transpose-down" class="control-button">Transpose -</div>
+    <div id="font-size-up" class="control-button">A+</div>
+    <div id="font-size-down" class="control-button">A-</div>
+  </div>
 
-
-    <div id="controls">
-        <button class="botao" onclick="rolar(1)">rolagem</button>
-        <button class="botao" onclick="rolar()">Pause</button>
-      
-        <button onclick="transposicaoBotao(1)">+ 1/2 tom</button>
-        <button onclick="transposicaoBotao(-1)">- 1/2 tom</button>
-        <Button onclick="reset()">reset</Button>
-      
-      </div>
-
- <div class="row">
-    <div class="col musicas">
-        
-<p data-arquivo="Hino 01 - chuvas de Graça" onclick="abrirMusica(event)"></p>
+  <div id="scroll-container">
+    <pre id="content">
+      Hino 59
+             Eu Creio, Sim
+              Tom:<b>G</b>
        
-        
-    </div>
+           <b>G</b>     <b>D</b>         <b>G</b>                <b>D</b>          <b>G</b>
+           Te conhecer o amor sem fim,  um pecador fui eu
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           Em o meu pensar nao houve lugar  para Cristo e o céu
+           
+                <b>D</b>              <b>G</b>           <b>D</b>              <b>G</b>  
+           Eu creio, sim, já creio, sim, Jesus morreu por mim
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           Pelo sangue Seu, que Ele verteu, libertado fui por fim
+           
+                   <b>D</b>          <b>G</b>               <b>D</b>              <b>G</b>
+           Pois, quando vi Jesus por mim,  sofrendo sobre a cruz
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           O meu coração, sem hesitação,  recebeu o amor e a luz
+           
+                <b>D</b>              <b>G</b>           <b>D</b>              <b>G</b>  
+           Eu creio, sim, já creio, sim, Jesus morreu por mim
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           Pelo sangue Seu, que Ele verteu, libertado fui por fim
+           
+                   <b>D</b>          <b>G</b>               <b>D</b>              <b>G</b>
+           Com lagrimas, pedi perdão,  e dor, também senti
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           Veio, então, Jesus, e a mim falou: "foi por ti que Eu morri"
+           
+                <b>D</b>              <b>G</b>           <b>D</b>              <b>G</b>  
+           Eu creio, sim, já creio, sim, Jesus morreu por mim
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           Pelo sangue Seu, que Ele verteu, libertado fui por fim
+           
+                   <b>D</b>          <b>G</b>               <b>D</b>              <b>G</b>
+           Eu sei que Deus, no Filho Seu, me vê perfeito e são
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           Não há mais temor, só bendito amor, gozo no meu coração
+            
+                <b>D</b>              <b>G</b>           <b>D</b>              <b>G</b>  
+           Eu creio, sim, já creio, sim, Jesus morreu por mim
+           <b>G7</b>          <b>C</b>               <b>G</b>          <b>Em</b>   <b>Am</b>  <b>D</b>  <b>G</b>
+           Pelo sangue Seu, que Ele verteu, libertado fui por fim
 
- <div class="row">
- <div id="resultado">
-<pre>
-                Hino 36
-                O Exilado
-                Tom: <b>C</b>
-                
-                [Intro] <b>C</b>  <b>G</b>  <b>Am</b>  <b>F</b>
-                <b>C</b>  <b>Am</b>  <b>G</b>
-        
-    <b>C</b>     <b>G/B</b>                   <b>F</b>    <b>C</b>       <b>G7</b>
-        Da linda pátria estou bem longe; Cansado estou
-            <b>C</b>     <b>G/B</b>              <b>F</b>     <b>C</b>          <b>G7</b>         <b>C</b> <b>C7</b>
-        Eu tenho de Jesus saudade, Oh, quando é que eu vou?
-          <b>G</b>            <b>C</b>     <b>Am</b>      <b>F</b>           <b>C</b>
-        Passarinhos, belas flores, Querem me encantar
-        <b>C</b>    <b>G</b>              <b>Am</b>      <b>F</b>    <b>C</b>       <b>G</b>            <b>C</b>
-        São vãos terrestres esplendores, Mas contemplo o  meu lar
-        <b>C</b>   <b>G</b>          <b>Am</b>     <b>F</b>      <b>C</b>    <b>Am</b>     <b>G</b>
-        Jesus me deu a Sua promessa; Vem  me  buscar
-        <b>C</b>      <b>G</b>     <b>Am</b>        <b>F</b>     <b>C</b>        <b>G</b>    <b>C</b> <b>C7</b>
-        Meu coração está com pressa, Eu quero já voar
-        <b>G</b>             <b>C</b>     <b>Am</b>     <b>F</b>     <b>G</b>     <b>C</b>
-        Meus pecados foram muitos, Mui culpado sou
-        <b>C</b>   <b>G</b>               <b>Am</b>     <b>F</b>    <b>C</b>         <b>G</b>     <b>C</b>
-        Porém, Seu sangue põe-me limpo; Eu para pátria vou
-       <b>C</b>      <b>G</b>          <b>Am</b>     <b>F</b>      <b>C</b>  <b>Am</b>   <b>G</b>
-        Qual filho de seu lar saudoso, Eu quero ir
-          <b>C</b>        <b>G</b>       <b>Am</b>      <b>F</b>     <b>C</b>             <b>G</b>      <b>C</b> <b>C7</b>
-        Qual passarinho para o ninho, Pra os braços Seus fugir
-        <b>G</b>              <b>C</b>      <b>Am</b>      <b>F</b>       <b>G</b>        <b>C</b>
-        É fiel - Sua vinda é certa, Quando... Eu não sei
-        <b>C</b>    <b>G</b>         <b>Am</b>      <b>F</b>    <b>C</b>          <b>G</b>   <b>C</b>
-        Mas Ele manda estar alerta; Do exílio voltarei
-        <b>C</b>     <b>G</b>           <b>Am</b>    <b>F</b>      <b>C</b>    <b>Am</b>     <b>G</b>
-        Sua vinda aguardo eu cantando; Meu lar no céu
-        <b>C</b>      <b>G</b>            <b>Am</b>       <b>F</b>   <b>C</b>         <b>G</b>     <b>C</b> <b>C7</b>
-        Seus passos hei de ouvir soando, Além do escuro véu
-        <b>G</b>              <b>C</b>    <b>Am</b>       <b>F</b>    <b>G</b>      <b>C</b>
-        Passarinhos, belas flores, Querem m'encantar
-        <b>C</b>    <b>G</b>              <b>Am</b>       <b>F</b>   <b>C</b>       <b>G</b>            <b>C</b>
-        São vãos terrestres esplendores, Mas contemplo o  meu lar
+            Glória a Deus
 
             [Acordes]
             A = X 0 2 2 2 0
@@ -269,11 +100,10 @@
             Em = 0 2 2 0 0 0
             G = 3 2 0 0 0 3
             G/B = X 2 0 0 3 3
+    </pre>
+  </div>
 
-        </pre>
-</div>
-</div>
   
-    
-  </body>
-  </html>
+</body>
+<script src="cifra.js"></script>
+</html>
