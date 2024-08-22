@@ -345,7 +345,7 @@ button{
         right: 20px;
         z-index: 1000;
         width: 100%;
-        max-width: 560px;
+        max-width: 460px;
         height: 315px;
       }
   
@@ -409,6 +409,7 @@ button{
           margin-top: 10px;
           position: static;
           max-width: 100%;
+          visibility: ;
         }
   
         .video-container iframe {
