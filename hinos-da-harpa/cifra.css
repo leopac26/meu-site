@@ -190,17 +190,17 @@ overflow: scroll;
             }
 
 
- #resultado pre{
-    font-size: 20px;
+ pre{
+    font-size: 16px;
 
    
  }
 
 
 
-#resultado pre b{
+b{
     color: blue;
-    font-size: 20px;    
+    font-size: 16px;    
 }
 
 @media(max-width:680px){
