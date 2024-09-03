@@ -1,9 +1,4 @@
-body {
-  height:100vh;
-  background-image: url("CSS-Background-Responsivo/img/backgroundImg.svg");
-  background-position:left center;
-  background:#fff no-repeat cover fixed;
-}
+
 
 .botao {
   width: 25px;
@@ -35,7 +30,7 @@ body {
 ul.menu {
   list-style: none;
   padding-right: 0;
-  display: flex;
+  
   margin: 0px auto;
   color: #fff;
   background: rgb(50, 7, 245);
@@ -45,10 +40,9 @@ ul.menu {
 }
 
 li {
-  display: block;
-  font-size: 18pt;
-  margin: 5px;
-  float: left;
+  
+  font-size: 15pt;
+  margin: 0px;
   padding: 1rem;
   position: relative;
   text-decoration: none;
@@ -92,13 +86,15 @@ ul li:focus-within {
   background-color: rgb(224, 176, 176);
   cursor: pointer;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.2s;
+  width: 300px;
   
 }
 
 a:hover {
   text-decoration: underline;
   color: coral;
+  
 }
 
 
