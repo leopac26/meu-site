@@ -152,9 +152,11 @@ ul li ul:focus{
   .titulo-menu{border: 1px solid blue;
     background: blue;
   color: rgb(250, 153, 9);
-  margin: 0px 5px ;
+  margin: auto ;
   font-size: 48px;
   text-align: center;
+  width: 100vw;
+  justify-content: center;
   }
   
 
