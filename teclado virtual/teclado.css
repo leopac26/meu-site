@@ -177,14 +177,6 @@
   
   ul.ordem-principal{list-style: none;}
   
-  .menu-principal {
-      position: fixed;
-      width: 100%;
-  background:blue;
-  margin-top: -490px;
-  left: 460px;
-}
-  
   
   
   ul.ordem-principal li {
