@@ -8,8 +8,8 @@ body {
     text-align: center;
     vertical-align: middle;
     background-color: #fff;
-    background-image: url("../CSS-Background-Responsivo/img/backgroundImg.svg");
-    background-repeat: repeat;
+    
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;}
     

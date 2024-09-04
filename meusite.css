@@ -124,7 +124,7 @@ ul li ul:focus{
     border: 1px solid black;
     background:#bbbbbb;
     color: white;
-    margin-top: 0px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ ul li ul:focus{
     
   }
   .menu-tabela{
-    margin:20px;
+    margin-top:20px;
     background: rgb(46, 7, 241);
   }
 
@@ -146,6 +146,7 @@ ul li ul:focus{
   
   .menu-tabela a {
     color:white;
+    
   }
 
 
