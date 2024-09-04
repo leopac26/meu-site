@@ -121,6 +121,7 @@ ul li ul:focus{
 
 
     .menu-principal{
+      position: fixed;
     border: 1px solid black;
     background:#bbbbbb;
     color: white;
@@ -134,6 +135,7 @@ ul li ul:focus{
   .menu-tabela{
     margin-top:20px;
     background: rgb(46, 7, 241);
+    
   }
 
   td{
@@ -147,6 +149,7 @@ ul li ul:focus{
   .menu-tabela a {
     color:white;
     
+    
   }
 
 
@@ -158,6 +161,7 @@ ul li ul:focus{
   text-align: center;
   width: 100vw;
   justify-content: center;
+  position: fixed;
   }
   
 
