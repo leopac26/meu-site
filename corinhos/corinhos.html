@@ -27,14 +27,21 @@
 }
 
 
-#principal-corinhos{
-  margin: 100px;
-  width: 300px;
-list-style:none;
-text-transform:capitalize;
-font-size: 30px;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: 700px;}
+#principal-corinhos {
+  overflow-y: auto;
+  position: fixed; /* Fixar a barra de rolagem na tela */
+  top: 90px; /* Ajustar para ficar logo abaixo do título azul */
+  left: 20px; /* Manter o alinhamento à esquerda */
+  height: calc(100vh - 130px); /* Calcular a altura como o total da tela menos o espaço ocupado pelo título */
+  width: 98.5%;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700px;
+}
+
+
 
 
 
@@ -146,11 +153,13 @@ h2{
 }
 
 
+
+
 @media(max-width:670px){
  .menu-principal{
   font-size:12px;
-  margin: 50px auto;
-  width: 830px;
+  margin: 33px 2px;
+  width: 530px;
 }
 ul.ordem-principal{
   padding: 0px;
@@ -163,6 +172,13 @@ ul.ordem-principal{
     font-size: 20px;
 }
 
+.titulo-menu{}
+
+
+#principal-corinhos{
+  
+  width: 100px;
+}
 
 }
 
@@ -190,7 +206,6 @@ ul.ordem-principal{
 
 <ul id="principal-corinhos">
 
-    <ul>
         <li><a href="alegria-esta-no-coraçao.html">A alegria esta no coração</a></li>
         <li><a href="ao-unico.html">Ao único</a> </li>
         <li><a href="Deus-forte.html">Deus forte</a> </li>
@@ -211,6 +226,7 @@ ul.ordem-principal{
         <li><a href=""></a></li>
         <li><a href=""></a></li>
     </ul>
+  
   
   
 </body>
