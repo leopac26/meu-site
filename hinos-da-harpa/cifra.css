@@ -380,7 +380,7 @@ button{
           flex-wrap: wrap;
           width: 100%;
           height: auto;
-          margin-top: 40px;
+          margin-top: 100px;
           border-right: none;
           border-bottom: none;
           position: static;
@@ -390,32 +390,24 @@ button{
   
         .control-button {
           flex: 1 1 30%;
-          padding: 10px 5px;
-          font-size: 14px;
+          padding: 2px 0px;
+          font-size: 10px;
           text-align: center;
-          margin: 5px;
+          margin: 2px;
         }
   
         #scroll-container {
           margin-left: 0;
           height: calc(100vh - 220px);
-          padding-top: 10px;
+          padding-top: 5px;
         }
   
         .video-container {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin-top: 10px;
-          position: static;
-          max-width: 100%;
-          visibility: ;
+          display: none;
         }
   
         .video-container iframe {
-          width: 100%;
-          max-width: 100%;
-          height: auto;
+          display: none;
         }
       }
 
