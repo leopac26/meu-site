@@ -168,7 +168,7 @@ ul li ul:focus{
 
 
   @media(max-width:670px){
-  .titulo-menu{font-size:28px;}
+  .titulo-menu{font-size:20px;}
   
   body {
     height:100vh;
@@ -208,7 +208,8 @@ ul li ul:focus{
     display: none;}
   
 
-    .menu-principal{font-size: 16px;}
+    .menu-principal{font-size: 16px;
+    margin-top: 25px;}
     
     }
 
