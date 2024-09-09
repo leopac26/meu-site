@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function transposeChords(semitones, preference) {
-      const chords = content.querySelectorAll('b');
+      const chords = content.querySelectorAll('b,i');
       chords.forEach(chord => {
         chord.innerHTML = transposeChord(chord.innerHTML, semitones, preference);
       });
